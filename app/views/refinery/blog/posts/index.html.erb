@@ -1,6 +1,6 @@
 </div>
-<div class="ninecol">
-  
+<div class="ninecol last">
+
 <% content_for :body_content_left do %>
   <%= raw @page.content_for(Refinery::Pages.default_parts.first.to_sym) if Refinery::Pages.default_parts.any? %>
   <% if @posts.any? %>
@@ -20,5 +20,8 @@
 
 <%= render '/refinery/content_page', { :hide_sections => [:body_content_title, :side_body] } %>
 <% content_for :stylesheets, stylesheet_link_tag('refinery/blog/frontend') %>
+</div>
+<div class="threecol last">
+  <h1>Upcoming Events</h1>
 </div>
 <div class="twelvecol last">
