@@ -67,3 +67,7 @@ $(document).ready(
 	
 	$('.caption').css({'right': (window.innerWidth/2)+(-550)+'px'});
 });
+
+$(window).resize(function() {
+  $('.caption').css({'right': (window.innerWidth/2)+(-550)+'px'});
+});

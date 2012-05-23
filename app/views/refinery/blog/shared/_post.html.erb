@@ -19,17 +19,17 @@
         <%= link_to t('read_more', :scope => 'refinery.blog.shared.posts'), refinery.blog_post_path(post) if blog_post_teaser_enabled? %>
       </p>
     </section>
-    <footer>
+<!--     <footer>
 
       <aside class='comment_count'>
-        <% if Refinery::Blog::Post.comments_allowed? %>
-          <% if post.comments.any? %>
-             (<%= pluralize(post.comments.approved.count, t('singular', :scope => 'refinery.blog.shared.comments')) %>)
-          <% else %>
-                (<%= t('none', :scope => 'refinery.blog.shared.comments') %>)
-          <% end %>
-        <% end %>
+        <%# if Refinery::Blog::Post.comments_allowed? %>
+          <%# if post.comments.any? %>
+             (<%#= pluralize(post.comments.approved.count, t('singular', :scope => 'refinery.blog.shared.comments')) %>)
+          <%# else %>
+                (<%#= t('none', :scope => 'refinery.blog.shared.comments') %>)
+          <%# end %>
+        <%# end %>
       </aside>
-    </footer>
+    </footer> -->
   </article>
 <% end %>

@@ -130,7 +130,7 @@ en:
         index:
           no_blog_articles_yet: There are no blog articles posted yet. Stay tuned.
         show:
-          blog_home: YIHUAN Home
+          blog_home: Home
           comments:
             title: Comments
             add: Make a Comment
