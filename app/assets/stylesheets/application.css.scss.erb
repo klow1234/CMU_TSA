@@ -1,0 +1,264 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= 1140
+ *= require_self
+ *= require_tree .
+*/
+
+@font-face 
+{
+	font-family: 'TradeGothic Condensed Bold';
+	src: url('http://www.cmusife.org/few/font/tgb2.ttf');
+}
+
+@font-face 
+{
+	font-family: 'TradeGothic';
+	src: url('http://www.cmusife.org/few/font/tg.ttf');
+}
+
+
+nav {
+	width:100%;
+	height:50px;
+	padding-left:5px;
+	overflow:hidden;
+
+}
+
+nav .menu {
+
+}
+
+nav ul {
+	list-style:none;
+  display:block;
+}
+
+nav li {
+	font-family: 'TradeGothic Condensed Bold', sans-serif ;
+	float:left;
+	font-size:18px;
+  padding-left:25px;
+  padding-right:25px;
+  padding-top:14px;
+  padding-bottom:14px;
+  color:white;
+}
+
+nav li a {
+	text-decoration:none;
+	text-transform:uppercase;
+	color:#3cb3d0;
+}
+
+.selected{
+  background:#a5a5a5;
+}
+
+nav li:hover {
+	cursor:pointer;
+	color:white;
+	background:#a5a5a5;
+	a {
+		color:white;
+	}
+}
+
+.selected a {
+	color:white;
+}
+
+.navbar {
+	width:100%;
+	height:50px;
+
+}
+
+.logo {
+	font-family: 'TradeGothic Condensed Bold', sans-serif ;
+	width:100%;
+	height:50px;
+	font-size:30px;
+	line-height:50px;
+	color:white;
+	background:#3cb3d0;
+}
+
+.logo img {
+	padding: 10px 10px 10px 15px;
+	height:30px;
+}
+
+.title {
+	padding-left:5px;
+}
+
+#fullwidth {
+	position: relative;
+	width: auto;
+	overflow:hidden;
+	clear:left;
+	margin:0;
+	height:400px;
+	background: #181818;
+}
+.pika-image {
+	position: relative;
+	height:400px;
+	margin:0 auto;
+	text-align:center;
+}
+	/*position image holders */
+	.pika-image .animation, .pika-image .main-image {
+		position: absolute;
+	}
+	.pika-image .animation {
+		display: none;
+		z-index:2;
+	}
+	.pika-image img {
+		border:0;
+		height:400px;
+	}
+
+.pika-image .caption {
+	font-family: 'TradeGothic Condensed Bold', sans-serif ;
+	position: absolute; 
+	background: black;
+	opacity:0.5;
+	font-size: 14px;
+	color: white;
+	padding: 10px;
+	text-align: right;
+	top: 80px;
+	right: 80px;
+}
+	.pika-image .caption p {
+		padding: 0;
+		margin: 0;
+		line-height: 14px;
+	}
+
+.pika-imgnav a {
+	position: absolute;
+	text-indent: -5000px;
+	display: block;
+	z-index:3;
+}
+	.pika-imgnav a.previous {
+		background:url('../images/blue_arrows.png') -30px 0 no-repeat;
+		display:block;
+		width:30px;
+		height:30px;
+		top: 200px;
+		left: 10px;
+		cursor:pointer;
+	}
+	.pika-imgnav a.next {
+		background:url('../images/blue_arrows.png') 0 0 no-repeat;
+		display:block;
+		width:30px;
+		height:30px;
+		top: 200px;
+		right: 10px;
+		cursor:pointer;
+	}
+	.pika-imgnav a.play {
+		background:url('../images/blue_arrows.png') -30px -30px no-repeat;
+		display:block;
+		width:30px;
+		height:30px;
+		top: 200px;
+		left:49%;
+		display: none;
+		cursor:pointer;
+	}
+	.pika-imgnav a.pause {
+		background:url('../images/blue_arrows.png') 0px -30px no-repeat;
+		display:block;
+		width:30px;
+		height:30px;
+		top: 200px;
+		left:49%;
+		display:none;
+		cursor:pointer;
+	}
+
+.pika-textnav {
+	overflow: hidden;
+	margin: 10px 0 0 0;
+}
+	.pika-textnav a {
+		font-size: 12px;
+		text-decoration: none;
+		color: #333;
+		padding: 4px;
+	}
+			.pika-textnav a:hover {
+				background: #e5e5e5;
+				color: #0065B2;
+			}
+	.pika-textnav a.previous {
+		float: left;
+		width: auto;
+		display: block;
+	}
+	.pika-textnav a.next {
+		float: right;
+		width: auto;
+		display: block;
+	}
+	
+.pika-thumbs {
+	display:hidden;
+	overflow: hidden;
+}
+
+.clip span{
+	background-color:black;
+	position:absolute;
+	top:5px;
+	left:5px;
+	display:hidden;
+}
+
+#fullwidth ul {
+	display:hidden;
+}
+
+.inner {
+	padding:0px 20px 20px 20px;
+	border-right: 1.5px solid #a5a5a5;
+}
+
+.row {
+	background:#efefef;
+}
+
+article h1 a {
+	font-family: 'TradeGothic Condensed Bold', sans-serif ;
+	color:#3cb3d0;
+	font-size:24px;
+	text-decoration:none;
+}
+
+section .post {
+	font-family: 'Helvetica', Arial, sans-serif ;
+	font-size:16px;
+	margin-top:5px;
+}
+
+section .details {
+	font-family: 'Helvetica', Arial, sans-serif ;
+	font-size:12px;
+	margin-top:-25px;
+}

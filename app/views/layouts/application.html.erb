@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<%= render '/refinery/html_tag' %>
+  <% site_bar = render('/refinery/site_bar', :head => true) -%>
+  <%= render '/refinery/head' %>
+  <body>
+    <%= site_bar -%>
+    <%= render '/refinery/ie6check' if request.env['HTTP_USER_AGENT'] =~ /MSIE/ -%>
+    <div class="container"> 
+      <div id="page_container">
+        <div class="row">
+          <div class="navbar">
+            <div class="onecol last">
+              <div class="logo">
+                <%= image_tag('tsa_logo.png') %>
+              </div>
+            </div>
+            <div class="twocol last">
+              <div class="logo title">
+                CMU TSA
+              </div>
+            </div>
+            <div class="ninecol last">
+              <header id="header">
+                <%= render(:partial => "/refinery/menu", :locals => {
+                   :dom_id => 'menu',
+                   :css => 'menu'
+                 }) %>
+              </header>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div id="page_container">
+        <section id="page">
+          <% if request.fullpath == "//blog" || request.fullpath == "/" %>
+            <div id="fullwidth">
+              <ul id="fullwidth_slider" class="jcarousel-skin-pika">
+                <li>
+                  <a href="/yihuan">
+                    <%= image_tag('image1.jpg') %>
+                  </a>
+                  <span>Welcome to Showcase !</span>
+                </li>
+                <li>
+                  <a href="#">
+                    <%= image_tag('image2.jpg') %>
+                  </a>
+                  <span>Welcome to Showcase !</span>
+                </li>
+                <li>
+                  <a href="#">
+                    <%= image_tag('image3.jpg') %>
+                  </a>
+                  <span>Welcome to Showcase !<br/> Derp derp</span>
+                </li>
+              </ul>
+            </div>
+          <% end %>
+          <div class="container"> 
+            <div class="row">
+              <div class="twelvecol last">
+                <%= yield %>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="container"> 
+          <div class="row">
+            <div class="twelvecol last">
+              <footer>
+                <%= render '/refinery/footer' -%>
+              </footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    <%= render '/refinery/javascripts' %>
+  </body>
+</html>
