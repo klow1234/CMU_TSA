@@ -24,9 +24,9 @@
 <div class="threecol last">
   <h1>Upcoming Events</h1>
   <ul>
-   <%#= upcoming_events.each do |e| %>
-      <li><%#= e.name %></li>
-    <%# end %>
+   <% upcoming_events.each do |e| %>
+      <li><%= e.name %> on <%= e.date.strftime("%m/%d/%y") %></li>
+    <% end %>
   </ul>
 </div>
 <div class="twelvecol last">
