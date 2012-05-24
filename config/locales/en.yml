@@ -50,9 +50,9 @@ en:
             copy_body: Copy Post Body to Teaser
             copy_body_help: Copies the post body to the teaser.  Leave teaser blank to let Refinery automatically make the teaser.
           index:
-            no_items_yet: 'There are no Blog Posts yet. Click "%{create}" to add your first blog post.'
+            no_items_yet: 'There are no posts yet. Click "%{create}" to add your first blog post.'
           uncategorized:
-            no_items_yet: 'There are no Uncategorized Blog Posts.'
+            no_items_yet: 'There are no Uncategorized Posts.'
           post:
             view_live_html: 'View this blog post live <br/><em>(opens in a new window)</em>'
             edit: Edit this blog post
@@ -134,7 +134,7 @@ en:
           comments:
             title: Comments
             add: Make a Comment
-          other: Other Blog Posts
+          other: Other Posts
           filed_in: Filed in
           tagged: Tagged
           submit: Send comment
