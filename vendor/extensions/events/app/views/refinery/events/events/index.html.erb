@@ -4,7 +4,7 @@
     	<div class="description">
     		<%= event.name %>
     	</div>
-      <%= link_to image_fu(@event.photo, nil), refinery.events_event_path(event) %>
+      <%= link_to(image_fu(@event.photo, nil), refinery.events_event_path(event)) %>
     </div>
   <% end %>
 <% end %>
