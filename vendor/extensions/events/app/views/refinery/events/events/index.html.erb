@@ -1,11 +1,12 @@
 <% content_for :body_content_left do %>
-  <ul id="events">
-    <% @events.each do |event| %>
-      <li>
-        <%= link_to event.name, refinery.events_event_path(event) %>
-      </li>
-    <% end %>
-  </ul>
+  <% @events.each do |event| %>
+    <div class="event_image">
+    	<div class="description">
+    		<%= event.name %>
+    	</div>
+      <%= link_to image_fu(@event.photo, nil), refinery.events_event_path(event) %>
+    </div>
+  <% end %>
 <% end %>
 
 <%= render '/refinery/content_page' %>
