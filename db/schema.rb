@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120523081854) do
+ActiveRecord::Schema.define(:version => 20120523221221) do
 
   create_table "refinery_blog_categories", :force => true do |t|
     t.string   "title"
@@ -64,6 +64,16 @@ ActiveRecord::Schema.define(:version => 20120523081854) do
   add_index "refinery_blog_posts", ["access_count"], :name => "index_refinery_blog_posts_on_access_count"
   add_index "refinery_blog_posts", ["id"], :name => "index_refinery_blog_posts_on_id"
   add_index "refinery_blog_posts", ["slug"], :name => "index_refinery_blog_posts_on_slug"
+
+  create_table "refinery_events", :force => true do |t|
+    t.string   "name"
+    t.date     "date"
+    t.text     "description"
+    t.integer  "photo_id"
+    t.integer  "position"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
 
   create_table "refinery_images", :force => true do |t|
     t.string   "image_mime_type"
