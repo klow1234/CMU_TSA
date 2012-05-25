@@ -4,7 +4,7 @@ class CreateOfficersOfficers < ActiveRecord::Migration
   def up
     create_table :refinery_officers do |t|
       t.string :name
-      t.string :position
+      t.string :position_name
       t.string :major
       t.text :blurb
       t.integer :graduating_year

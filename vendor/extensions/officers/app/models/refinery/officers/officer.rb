@@ -1,7 +1,7 @@
 module Refinery
   module Officers
     class Officer < Refinery::Core::BaseModel
-    	attr_accessible :name, :position, :major, :blurb, :graduating_year, :active, :photo_id
+    	attr_accessible :name, :position, :position_name, :major, :blurb, :graduating_year, :active, :photo_id
       self.table_name = 'refinery_officers'      
     
       acts_as_indexed :fields => [:name, :position, :major, :blurb]
