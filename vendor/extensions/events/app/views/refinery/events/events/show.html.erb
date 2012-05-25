@@ -1,7 +1,9 @@
 <% content_for :body_content_title do %>
-  <div class="event_image">
-    <%= image_fu @event.photo, nil %>
-  </div>
+  <% if !@event.photo.nil? %>
+    <div class="event_image">
+      <%= image_fu @event.photo, nil %>
+    </div>
+  <% end %>
   <h1><%= @event.name %></h1>
   <h1><div class="gray"><%=@event.start_time.strftime("%l:%M %p")%> <%= @event.date.strftime("%A %m/%d") %><br/>
   <%=@event.place %></div></h1>
@@ -9,10 +11,7 @@
 
 <% content_for :body_content_left do %>
   <section>
-    <h1>Description</h1>
-    <p>
-      <%=raw @event.description %>
-    </p>
+    <%=raw @event.description %>
   </section>
 <% end %>
 

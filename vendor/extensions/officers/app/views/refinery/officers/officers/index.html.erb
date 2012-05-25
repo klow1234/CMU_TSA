@@ -2,7 +2,7 @@
     <% @officers.each do |officer| %>
   		<div class="officer">
       	<div class="image">
-      		<%= image_fu officer.photo, '400x250^' %>
+      		<%= image_fu officer.photo, '400x250#' %>
       	</div>
       	<div class="text">
       		<h1><div class="gray"><%= officer.name %></div></h1>
