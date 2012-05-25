@@ -12,7 +12,7 @@
   
   <div class='field'>
     <%= f.label :position -%>
-    <%= f.text_field :position  -%>
+    <%= f.select(:position, Refinery::Officers::Officer.list, :prompt => "Select ...") %>
 
   </div>
   
@@ -44,7 +44,7 @@
   
   <div class='field'>
     <%= f.label :graduating_year -%>
-    <%= f.number_field :graduating_year  -%>
+    <%= f.number_field :graduating_year, :value => Time.now.year -%>
 
   </div>
   

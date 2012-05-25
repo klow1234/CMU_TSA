@@ -8,7 +8,7 @@ class CreateOfficersOfficers < ActiveRecord::Migration
       t.string :major
       t.text :blurb
       t.integer :graduating_year
-      t.boolean :active
+      t.boolean :active, :default => true
       t.integer :photo_id
       t.integer :position
 

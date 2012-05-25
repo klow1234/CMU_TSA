@@ -1,11 +1,22 @@
 <% content_for :body_content_left do %>
-  <ul id="officers">
     <% @officers.each do |officer| %>
-      <li>
-        <%= link_to officer.name, refinery.officers_officer_path(officer) %>
-      </li>
+  		<div class="officer">
+      	<div class="image">
+      		<%= image_fu officer.photo, nil %>
+      	</div>
+      	<div class="text">
+      		<h1><div class="gray"><%= officer.name %></div></h1>
+      		<h1><%= officer.position %></h1>
+      		<div class="major">
+	      		<p>Class of <%= officer.graduating_year %></p>
+	      		<p><%= officer.major %></p>
+	      	</div>
+      		<div class="blurb">
+	      		<%= raw officer.blurb %>
+  				</div>
+      	</div>
+  		</div>
     <% end %>
-  </ul>
 <% end %>
 
 <%= render '/refinery/content_page' %>

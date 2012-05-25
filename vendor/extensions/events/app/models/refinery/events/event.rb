@@ -7,7 +7,10 @@ module Refinery
     
       acts_as_indexed :fields => [:name, :place, :description]
 
-      validates :name, :presence => true, :uniqueness => true
+      validates :name, :presence => true
+      validates_date :date
+      validates_time :validates_time
+      validates_presence_of :place
           
       belongs_to :photo, :class_name => '::Refinery::Image'
         
