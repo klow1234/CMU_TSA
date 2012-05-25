@@ -56,6 +56,7 @@
   
   <div class='field'>
     <%= f.label :photo -%>
+    Photos will be resized automatically to 400x250px.<br/>
     <%= render '/refinery/admin/image_picker',
                :f => f,
                :field => :photo_id,

@@ -5,11 +5,10 @@ require File.expand_path('../application', __FILE__)
 CMUTsa::Application.initialize!
 
 ActionMailer::Base.smtp_settings = {
-    :enable_starttls_auto => true,
-    :address        => 'smtp.sendgrid.net',
-    :port           => '25',
-    :authentication => :plain,
-    :user_name      => 'myemail@domain.com',
-    :password       => 'mypassword',
-    :domain         => 'mydomain.com'
+	:address	=> "smtp.gmail.com",
+	:port			=> 587,
+	:user_name => "pdpstark",
+	:password => ENV['GMAIL_PASS'],
+	:authentication => "plain",
+	:enable_starttls_auto => true
 }
