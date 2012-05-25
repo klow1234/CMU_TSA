@@ -5,7 +5,7 @@ class ApplicationController < ActionController::Base
   private
 
   def upcoming_events
-    @upcoming_events = Refinery::Events::Event.where('date >= ?', Time.now).order('date DESC').limit(5)
+    @upcoming_events = Refinery::Events::Event.where('date >= ?', Time.now).order('date ASC').limit(5)
     @upcoming_events
   end
   helper_method :upcoming_events
