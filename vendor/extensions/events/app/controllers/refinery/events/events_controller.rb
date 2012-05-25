@@ -22,7 +22,7 @@ module Refinery
     protected
 
       def find_all_events
-        @events = Event.order('position ASC')
+        @events = Event.order('date DESC, start_time DESC')#.order('position ASC')
       end
 
       def find_page
