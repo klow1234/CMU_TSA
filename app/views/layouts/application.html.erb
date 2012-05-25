@@ -7,16 +7,18 @@
     <%= render '/refinery/ie6check' if request.env['HTTP_USER_AGENT'] =~ /MSIE/ -%>
     <div class="container"> 
       <div id="page_container">
-        <div class="row">
+        <div class="row logo_color">
           <div class="navbar">
             <div class="onecol last">
               <div class="logo">
-                <%= image_tag('tsa_logo.png') %>
+                <%= link_to(image_tag('tsa_logo.png'), "/") %>
               </div>
             </div>
             <div class="twocol last">
-              <div class="logo title">
-                CMU TSA
+              <div class="logo">
+                <div class="title">
+                  <%= link_to 'CMU TSA', "/" %>
+                </div>
               </div>
             </div>
             <div class="ninecol last">

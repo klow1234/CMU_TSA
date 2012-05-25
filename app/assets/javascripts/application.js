@@ -66,6 +66,9 @@ $(document).ready(
 		// $("#pikame").PikaChoose({transition:[6]}); // 6: fade out, then fade in (use this for different sized images)
 	
 	$('.caption').css({'right': (window.innerWidth/2)+(-550)+'px'});
+	$("nav li").click(function () {
+      window.location.replace($(this).find('a').attr('href'));
+    });
 });
 
 $(window).resize(function() {
