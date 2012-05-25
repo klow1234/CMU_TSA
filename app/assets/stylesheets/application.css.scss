@@ -142,6 +142,7 @@ nav {
 		top: 80px;
 		right: 80px;
 		p {
+			font-family: 'TradeGothic Condensed Bold', sans-serif ;
 			padding: 0;
 			margin: 0;
 			line-height: 14px;
@@ -259,7 +260,7 @@ section .post {
 section .details {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size:12px;
-	margin-top:-55px;
+	margin-top:-65px;
 }
 
 section .show {
@@ -327,6 +328,7 @@ footer p {
 		list-style:none;
 		color:#a5a5a5;
 		margin-bottom:15px;
+		font-size:20px;
 	}
 	a, a:visited {
 		text-decoration:none;
