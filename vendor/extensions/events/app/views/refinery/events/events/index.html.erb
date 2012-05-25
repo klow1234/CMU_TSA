@@ -1,11 +1,13 @@
 <% content_for :body_content_left do %>
   <% @events.each do |event| %>
-    <div class="event_image">
-    	<div class="description">
-    		<%= event.name %>
-    	</div>
-      <%= link_to(image_fu(event.photo, nil), refinery.events_event_path(event)) %>
-    </div>
+  	<% if !event.photo.nil? %>
+	    <div class="event_image">
+	    	<div class="description">
+	    		<%= event.name %>
+	    	</div>
+	      <%= link_to(image_fu(event.photo, nil), refinery.events_event_path(event)) %>
+	    </div>
+  	<% end %>
   <% end %>
 <% end %>
 
