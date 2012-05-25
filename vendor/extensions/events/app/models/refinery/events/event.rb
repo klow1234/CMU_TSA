@@ -1,6 +1,8 @@
 module Refinery
   module Events
     class Event < Refinery::Core::BaseModel
+
+    	attr_accessible :name, :date, :start_time, :place, :photo_id, :description, :position
       self.table_name = 'refinery_events'      
     
       acts_as_indexed :fields => [:name, :place, :description]
