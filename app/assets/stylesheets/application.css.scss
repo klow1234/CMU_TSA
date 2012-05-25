@@ -132,7 +132,7 @@ nav {
 		font-family: 'TradeGothic Condensed Bold', sans-serif ;
 		position: absolute; 
 		background: black;
-		opacity:0.5;
+		opacity:0.7;
 		font-size: 14px;
 		color: white;
 		padding: 10px;
@@ -143,6 +143,13 @@ nav {
 			padding: 0;
 			margin: 0;
 			line-height: 14px;
+			a, a:visited {
+				color:white
+				text-decoration:none;
+			}
+			a:hover {
+				color:#a5a5a5
+			}
 		}
 	}
 }
