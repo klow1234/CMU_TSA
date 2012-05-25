@@ -103,14 +103,15 @@ ActiveRecord::Schema.define(:version => 20120525072652) do
 
   create_table "refinery_officers", :force => true do |t|
     t.string   "name"
-    t.string   "position"
+    t.string   "position_name"
     t.string   "major"
     t.text     "blurb"
     t.integer  "graduating_year"
-    t.boolean  "active"
+    t.boolean  "active",          :default => true
     t.integer  "photo_id"
-    t.datetime "created_at",      :null => false
-    t.datetime "updated_at",      :null => false
+    t.integer  "position"
+    t.datetime "created_at",                        :null => false
+    t.datetime "updated_at",                        :null => false
   end
 
   create_table "refinery_page_part_translations", :force => true do |t|
@@ -213,11 +214,11 @@ ActiveRecord::Schema.define(:version => 20120525072652) do
   create_table "refinery_sliding_images", :force => true do |t|
     t.string   "name"
     t.text     "caption"
-    t.boolean  "active"
+    t.boolean  "active",     :default => true
     t.integer  "photo_id"
     t.integer  "position"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",                   :null => false
+    t.datetime "updated_at",                   :null => false
   end
 
   create_table "refinery_user_plugins", :force => true do |t|
