@@ -38,24 +38,12 @@
           <% if request.fullpath.to_s.include?("//blog") || request.fullpath == "/" %>
             <div id="fullwidth">
               <ul id="fullwidth_slider" class="jcarousel-skin-pika">
-                <li>
-                  <a href="/yihuan">
-                    <%= image_tag('image1.jpg') %>
-                  </a>
-                  <span>Welcome to Showcase !</span>
-                </li>
-                <li>
-                  <a href="#">
-                    <%= image_tag('image2.jpg') %>
-                  </a>
-                  <span>Welcome to Showcase !</span>
-                </li>
-                <li>
-                  <a href="#">
-                    <%= image_tag('image3.jpg') %>
-                  </a>
-                  <span>Welcome to Showcase !<br/> Derp derp</span>
-                </li>
+                <% image_slider.each do |image| %>
+                  <li>
+                    <%= image_fu image.photo, nil %>
+                    <span><%= raw image.caption %></span>
+                  </li>
+                <% end %>
               </ul>
             </div>
           <% end %>

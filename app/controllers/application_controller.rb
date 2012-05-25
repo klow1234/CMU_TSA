@@ -9,4 +9,10 @@ class ApplicationController < ActionController::Base
     @upcoming_events
   end
   helper_method :upcoming_events
+
+  def image_slider
+    @image_slider = Refinery::SlidingImages::SlidingImage.order('position ASC')
+    @image_slider
+  end
+  helper_method :image_slider
 end

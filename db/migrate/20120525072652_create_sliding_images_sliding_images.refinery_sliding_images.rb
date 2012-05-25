@@ -5,7 +5,7 @@ class CreateSlidingImagesSlidingImages < ActiveRecord::Migration
     create_table :refinery_sliding_images do |t|
       t.string :name
       t.text :caption
-      t.boolean :active
+      t.boolean :active, :default => true
       t.integer :photo_id
       t.integer :position
 
