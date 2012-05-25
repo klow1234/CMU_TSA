@@ -1,0 +1,31 @@
+es:
+  refinery:
+    plugins:
+      sliding_images:
+        title: Sliding Images
+#        article: masculino/femenino
+    sliding_images:
+      admin:
+        sliding_images:
+          actions:
+            create_new: Crear nuevo sliding image
+            reorder: Reordenar sliding images
+            reorder_done: Reordenación de sliding images completada
+          records:
+            title: Sliding Images
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay sliding images todavía. Pulsa en "Crear nuevo Sliding Image" para crear tu primer sliding image.
+          sliding_image:
+            view_live_html: Ver este sliding image como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este sliding image
+            delete: Borrar este sliding image para siempre
+      sliding_images:
+        show:
+          other: Otros sliding images
+  activerecord:
+    attributes:
+      'refinery/sliding_images/sliding_image':
+        name: Name
+        caption: Caption
+        active: Active
+        photo: Photo

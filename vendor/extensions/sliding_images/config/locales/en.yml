@@ -1,0 +1,30 @@
+en:
+  refinery:
+    plugins:
+      sliding_images:
+        title: Sliding Images
+    sliding_images:
+      admin:
+        sliding_images:
+          actions:
+            create_new: Add New Sliding Image
+            reorder: Reorder Sliding Images
+            reorder_done: Done Reordering Sliding Images
+          records:
+            title: Sliding Images
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Sliding Images yet. Click "Add New Sliding Image" to add your first sliding image.
+          sliding_image:
+            view_live_html: View this sliding image live <br/><em>(opens in a new window)</em>
+            edit: Edit this sliding image
+            delete: Remove this sliding image forever
+      sliding_images:
+        show:
+          other: Other Sliding Images
+  activerecord:
+    attributes:
+      'refinery/sliding_images/sliding_image':
+        name: Name
+        caption: Caption
+        active: Active
+        photo: Photo

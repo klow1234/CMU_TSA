@@ -1,0 +1,30 @@
+nl:
+  refinery:
+    plugins:
+      sliding_images:
+        title: Sliding Images
+    sliding_images:
+      admin:
+        sliding_images:
+          actions:
+            create_new: Maak een nieuwe Sliding Image
+            reorder: Wijzig de volgorde van de Sliding Images
+            reorder_done: Klaar met het wijzingen van de volgorde van de Sliding Images
+          records:
+            title: Sliding Images
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Sliding Images. Druk op 'Maak een nieuwe Sliding Image' om de eerste aan te maken.
+          sliding_image:
+            view_live_html: Bekijk deze sliding image op de website <br/><em>(opent een nieuw venster)</em>
+            edit: Bewerk deze sliding image
+            delete: Verwijder deze sliding image voor eeuwig
+      sliding_images:
+        show:
+          other: Andere Sliding Images
+  activerecord:
+    attributes:
+      'refinery/sliding_images/sliding_image':
+        name: Name
+        caption: Caption
+        active: Active
+        photo: Photo

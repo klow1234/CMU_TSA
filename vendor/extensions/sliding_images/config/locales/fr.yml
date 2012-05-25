@@ -1,0 +1,30 @@
+fr:
+  refinery:
+    plugins:
+      sliding_images:
+        title: Sliding Images
+    sliding_images:
+      admin:
+        sliding_images:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Sliding Image
+            reorder: Réordonner les Sliding Images
+            reorder_done: Fin de réordonnancement des Sliding Images
+          records:
+            title: Sliding Images
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Sliding Image. Cliquer sur "Créer un(e) nouve(au/l/lle) Sliding Image" pour créer votre premi(er/ère) sliding image.'
+          sliding_image:
+            view_live_html: Voir ce(t/tte) sliding image <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) sliding image
+            delete: Supprimer définitivement ce(t/tte) sliding image
+      sliding_images:
+        show:
+          other: Autres Sliding Images
+  activerecord:
+    attributes:
+      'refinery/sliding_images/sliding_image':
+        name: Name
+        caption: Caption
+        active: Active
+        photo: Photo

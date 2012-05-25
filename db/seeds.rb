@@ -20,3 +20,6 @@ Refinery::Events::Engine.load_seed
 
 # Added by Refinery CMS Officers extension
 Refinery::Officers::Engine.load_seed
+
+# Added by Refinery CMS Sliding Images extension
+Refinery::SlidingImages::Engine.load_seed
