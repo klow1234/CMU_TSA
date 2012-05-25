@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120525040532) do
+ActiveRecord::Schema.define(:version => 20120525055957) do
 
   create_table "refinery_blog_categories", :force => true do |t|
     t.string   "title"
@@ -100,6 +100,18 @@ ActiveRecord::Schema.define(:version => 20120525040532) do
   end
 
   add_index "refinery_inquiries_inquiries", ["id"], :name => "index_refinery_inquiries_inquiries_on_id"
+
+  create_table "refinery_officers", :force => true do |t|
+    t.string   "name"
+    t.string   "position"
+    t.string   "major"
+    t.text     "blurb"
+    t.integer  "graduating_year"
+    t.boolean  "active"
+    t.integer  "photo_id"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
+  end
 
   create_table "refinery_page_part_translations", :force => true do |t|
     t.integer  "refinery_page_part_id"
