@@ -26,7 +26,10 @@
   <div class='upcoming'>
     <ul>
      <% upcoming_events.each do |e| %>
-        <li><%= link_to e.name, refinery.events_event_path(e) %><br/><%= e.date.strftime("%m/%d/%y") %></li>
+        <li><%= link_to e.name, refinery.events_event_path(e) %><br/>
+            <%=e.start_time.strftime("%I:%M %p")%> <%= e.date.strftime("%m/%d/%y") %><br/>
+            <%=e.place %>
+        </li>
       <% end %>
     </ul>
   </div>
