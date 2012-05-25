@@ -277,17 +277,6 @@ nav li:hover {
 	background:#efefef;
 }
 
-article h1 a, article h1 a:visited, article h1 {
-	font-family: 'TradeGothic Condensed Bold', sans-serif ;
-	color:#3cb3d0;
-	font-size:24px;
-	text-decoration:none;
-}
-
-article h1 a:hover { 
-	color: #2596b2;
-}
-
 p, section .post {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size:16px;
@@ -326,29 +315,19 @@ footer p {
 .pagination {
 	margin-top:15px;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-.pagination .disabled, .pagination .current {
-	color: #a5a5a5;
-	font-style:normal;
-}
-
-.pagination a, .pagination a:visited {
-	text-decoration:none;
-	color:#3cb3d0;
-	text-decoration:none;
-}
-
-.pagination a:hover {
-	color:#2596b2;
-	text-decoration:none;
-}
-
-h1 {
-	font-family: 'TradeGothic Condensed Bold', sans-serif ;
-	color:#3cb3d0;
-	font-size:24px;
-	text-decoration:none;
+	.disabled, .current {
+		color: #a5a5a5;
+		font-style:normal;
+	}
+	a, a:visited {
+		text-decoration:none;
+		color:#3cb3d0;
+		text-decoration:none;
+	}
+	a:hover {
+		color:#2596b2;
+		text-decoration:none;
+	}
 }
 
 .inquiries {
@@ -356,21 +335,21 @@ h1 {
 }
 
 .event_image {
-	height:200px;
+	height:150px;
 	width:1080px;
 	background:gray;
 	position:relative;
-}
-
-.event_image .description {
-	position:absolute;
-	top:50px;
-	left:50px;
-	font-family: 'TradeGothic Condensed Bold', sans-serif ;
-	font-size:18px;
-	background:white;
-	opacity:0.4;
-	padding:15px;
+	margin-bottom:10px;
+	.description {
+		position:absolute;
+		top:50px;
+		left:50px;
+		font-family: 'TradeGothic Condensed Bold', sans-serif ;
+		font-size:18px;
+		background:white;
+		opacity:0.4;
+		padding:15px;
+	}
 }
 
 p img {
@@ -379,8 +358,11 @@ p img {
 
 .upcoming {
 	li {
-		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-family: 'TradeGothic Condensed Bold', sans-serif ;
+		text-transform:uppercase;
 		list-style:none;
+		color:#a5a5a5;
+		margin-bottom:15px;
 	}
 	a, a:visited {
 		text-decoration:none;
@@ -388,5 +370,23 @@ p img {
 	}
 	a:hover {
 		color:#2596b2;
+	}
+}
+
+h1 {
+	font-family: 'TradeGothic Condensed Bold', sans-serif ;
+	text-transform:uppercase;
+	color:#3cb3d0;
+	font-size:24px;
+	#body_content_title {
+
+	}
+	a, a:visited {
+		color:#3cb3d0;
+		font-size:24px;
+		text-decoration:none;
+	}
+	a:hover { 
+		color: #2596b2;
 	}
 }
