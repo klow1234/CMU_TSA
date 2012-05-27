@@ -133,10 +133,9 @@ nav {
 	.caption {
 		font-family: 'TradeGothic Condensed Bold', sans-serif ;
 		position: absolute; 
-		background: black;
+		background: white;
 		opacity:0.7;
 		font-size: 14px;
-		color: white;
 		padding: 10px;
 		text-align: right;
 		top: 80px;
@@ -148,7 +147,6 @@ nav {
 			margin: 0;
 			line-height: 16px;
 			a, a:visited {
-				color:white;
 				text-decoration:none;
 			}
 			a:hover {
