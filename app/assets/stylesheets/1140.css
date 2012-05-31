@@ -123,8 +123,8 @@ img {
 	float: none;
 	margin-left: 0px;
 	margin-right: 0px;
-	padding-left: 20px;
-	padding-right: 20px;
+	padding-left: 0px;
+	padding-right: 0px;
 	}
 
 	.upcoming {
@@ -133,6 +133,15 @@ img {
 
 	#blog_posts {
 		border-right:none;
+	}
+
+	.officer .position {
+		display:inline-block;
+	}
+
+	.officer .major {
+		float:right;
+		margin-top:0px;
 	}
 
 }

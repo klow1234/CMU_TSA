@@ -1,20 +1,28 @@
 <% content_for :body_content_left do %>
     <% @officers.each do |officer| %>
-  		<div class="officer">
-      	<div class="image">
-      		<%= image_fu officer.photo, '400x250#' %>
-      	</div>
-      	<div class="text">
-      		<h1><div class="gray"><%= officer.name %></div></h1>
-      		<h1><%= officer.position_name %></h1>
-      		<div class="major">
-	      		<p>Class of <%= officer.graduating_year %></p>
-	      		<p><%= officer.major %></p>
-	      	</div>
-      		<div class="blurb">
-	      		<%= raw officer.blurb %>
-  				</div>
-      	</div>
+      <div class="row">
+        <div class="officer">
+          <div class="fivecol">
+          	<div class="image">
+          		<%= image_fu officer.photo, nil %>
+          	</div>
+          </div>
+          <div class="sevencol last">
+          	<div class="text">
+              <div class="position">
+            		<h1><div class="gray"><%= officer.name %></div></h1>
+            		<h1><%= officer.position_name %></h1>
+          		</div>
+              <div class="major">
+    	      		<p>Class of <%= officer.graduating_year %></p>
+    	      		<p><%= officer.major %></p>
+    	      	</div>
+          		<div class="blurb">
+    	      		<%= raw officer.blurb %>
+      				</div>
+          	</div>
+          </div>
+        </div>
   		</div>
     <% end %>
 <% end %>
