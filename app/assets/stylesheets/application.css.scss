@@ -22,6 +22,13 @@
 
 @font-face 
 {
+	font-family: 'TradeGothic Condensed';
+	src: url('tgc.ttf');
+}
+
+
+@font-face 
+{
 	font-family: 'TradeGothic';
 	src: url('tg.ttf');
 }
@@ -57,7 +64,8 @@ nav {
 	  display:block;
 	}
 	li {
-		font-family: 'TradeGothic Condensed Bold', sans-serif ;
+		font-family: 'TradeGothic Condensed', sans-serif ;
+		font-weight:bold;
 		float:left;
 		font-size:22px;
 	  padding-left:25px;
@@ -133,7 +141,6 @@ nav {
 		height:400px;
 	}
 	.caption {
-		font-family: 'TradeGothic Condensed Bold', sans-serif ;
 		position: absolute; 
 		background: white;
 		opacity:0.7;
@@ -144,7 +151,7 @@ nav {
 		right: 80px;
 		max-width:250px;
 		p {
-			font-family: 'TradeGothic', sans-serif ;
+			font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 			padding: 0;
 			margin: 0;
 			line-height: 16px;
@@ -320,7 +327,7 @@ footer p {
 		position:absolute;
 		top:50px;
 		left:50px;
-		font-family: 'TradeGothic Condensed Bold', sans-serif ;
+		font-family: 'TradeGothic Condensed', sans-serif ;
 		font-size:18px;
 		background:white;
 		opacity:0.7;
@@ -332,7 +339,7 @@ footer p {
 .upcoming {
 	margin-top:20px;
 	li {
-		font-family: 'TradeGothic Condensed Bold', sans-serif ;
+		font-family: 'TradeGothic Condensed', sans-serif ;
 		text-transform:uppercase;
 		list-style:none;
 		color:#a5a5a5;
@@ -349,7 +356,7 @@ footer p {
 }
 
 h1 {
-	font-family: 'TradeGothic Condensed Bold', sans-serif ;
+	font-family: 'TradeGothic Condensed', sans-serif ;
 	text-transform:uppercase;
 	color:#3cb3d0;
 	font-size:28px;
