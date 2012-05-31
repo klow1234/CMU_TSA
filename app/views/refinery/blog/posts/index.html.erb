@@ -22,8 +22,8 @@
 <% content_for :stylesheets, stylesheet_link_tag('refinery/blog/frontend') %>
 </div>
 <div class="threecol last">
-  <h1>UPCOMING EVENTS</h1>
   <div class='upcoming'>
+    <h1>UPCOMING EVENTS</h1>
     <ul>
      <% upcoming_events.each do |e| %>
         <li><%= link_to e.name, refinery.events_event_path(e) %><br/>

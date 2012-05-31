@@ -127,4 +127,12 @@ img {
 	padding-right: 20px;
 	}
 
+	.upcoming {
+		padding: 30px;
+	}
+
+	#blog_posts {
+		border-right:none;
+	}
+
 }
