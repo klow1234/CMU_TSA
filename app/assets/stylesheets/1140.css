@@ -148,4 +148,12 @@ img {
 		top:25px;
 	}
 
+	.logo {
+		display:inline-block;
+	}
+
+	nav {
+		overflow:visible;
+	}
+
 }
