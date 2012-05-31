@@ -144,4 +144,8 @@ img {
 		margin-top:0px;
 	}
 
+	.event_image .description {
+		top:25px;
+	}
+
 }
