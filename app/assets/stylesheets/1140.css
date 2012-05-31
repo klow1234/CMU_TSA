@@ -139,12 +139,11 @@ img {
 	}
 
 	.officer .position {
-		display:inline-block;
+
 	}
 
 	.officer .major {
-		float:right;
-		margin-top:0px;
+		margin-top:5px;
 	}
 
 	.event_image .description {
@@ -202,5 +201,17 @@ img {
 
 	#fullwidth {
 		display:none;
+	}
+
+	.event_image .description {
+		max-width:100px;
+	}
+
+	.actions {
+		margin-left:80px !important;
+	}
+
+	input[type="text"], input[type="email"], textarea {
+		width:200px !important;
 	}
 }

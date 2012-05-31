@@ -8,8 +8,8 @@
  * You're free to add application-wide styles to this file and they'll appear at the top of the
  * compiled file, but it's generally better to create a new file per style scope.
  *
- *= 1140
  *= form
+ *= 1140
  *= require_self
  *= require_tree .
 */
@@ -375,6 +375,7 @@ h1 {
 }
 
 .officer {
+	margin-bottom:20px;
 	.image {
 		width:100%;
 		overflow:hidden;
