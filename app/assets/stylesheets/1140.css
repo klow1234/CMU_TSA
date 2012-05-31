@@ -90,14 +90,17 @@ img {
 
 /* Smaller screens */
 
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 1024px) {
 
 	body {
 	font-size: 0.8em;
 	line-height: 1.5em;
 	}
-	
+		
+	nav li a {
+		padding-top:15px;
 	}
+}
 
 
 /* Mobile */
@@ -192,6 +195,7 @@ img {
 
 	nav li a {
 		font-size:30px;
+		padding-top:15px;
 		padding-left:7px;
 		padding-right:50px;
 	}
