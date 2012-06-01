@@ -121,7 +121,7 @@ nav {
 	clear:left;
 	margin:0;
 	height:400px;
-	background: #181818;
+	background: #efefef;
 }
 
 .pika-image {
@@ -327,12 +327,20 @@ footer p {
 		position:absolute;
 		top:50px;
 		left:50px;
-		font-family: 'TradeGothic Condensed', sans-serif ;
+		font-family: 'TradeGothic Condensed Bold', sans-serif ;
+		text-transform: uppercase;
 		font-size:18px;
 		background:white;
 		opacity:0.7;
 		padding:15px;
 		cursor:pointer;
+		z-index:2;
+	}
+	img {
+		z-index:1;
+		&:hover {
+			opacity:0.8;
+		}
 	}
 }
 
