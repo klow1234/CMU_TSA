@@ -12,6 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require twitter/bootstrap
 //= require_tree .
 
 /*!
@@ -76,7 +77,7 @@ $(document).ready(
 });
 
 $(window).resize(function() {
-  $('.caption').css({'right': (window.innerWidth/2)+(-550)+'px'});
+	$('.caption').css({'right': (window.innerWidth/2)+($('.row').width()/(-1*2))+(20)+'px'});
 	var height = ($('.description').parent().height())/4;
 	$('.description').css({'top': height+'px'});
 });
