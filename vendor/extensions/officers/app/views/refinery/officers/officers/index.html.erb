@@ -1,10 +1,10 @@
 <% content_for :body_content_left do %>
     <% @officers.each do |officer| %>
-      <div class="row">
-        <div class="officer">
+      <div class="officer">
+        <div class="row">
           <div class="fivecol">
           	<div class="image">
-          		<%= image_fu officer.photo, nil %>
+          		<%= image_fu officer.photo, '426x250#' %>
           	</div>
           </div>
           <div class="sevencol last">
@@ -24,8 +24,8 @@
           </div>
         </div>
   		</div>
-    </br>
     <% end %>
+
 <% end %>
 
 <%= render '/refinery/content_page' %>
