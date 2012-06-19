@@ -13,6 +13,10 @@ module Refinery
       validates_presence_of :place
           
       belongs_to :photo, :class_name => '::Refinery::Image'
+
+      def to_param
+        "#{id}-#{name.parameterize}"
+      end
         
     end
   end
