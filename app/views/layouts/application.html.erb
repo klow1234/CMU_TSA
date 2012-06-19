@@ -34,7 +34,7 @@
     </div>
       <div id="page_container">
         <section id="page">
-          <% if request.fullpath.to_s.include?("//blog") || request.fullpath == "/" %>
+          <% if request.fullpath.to_s.include?("/blog") || request.fullpath == "/" %>
             <div id="fullwidth">
               <ul id="fullwidth_slider" class="jcarousel-skin-pika">
                 <% image_slider.each do |image| %>
