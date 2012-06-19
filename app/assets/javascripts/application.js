@@ -66,7 +66,7 @@ $(document).ready(
 		// $("#pikame").PikaChoose({transition:[5]}); // 5: full image blind slide
 		// $("#pikame").PikaChoose({transition:[6]}); // 6: fade out, then fade in (use this for different sized images)
 	
-	$('.caption').css({'right': (window.innerWidth/2)+($('.row').width()/(-1*2))+(20)+'px'});
+	$('.caption').css({'right': (1920/2)+($('.row').width()/(-1*2))+(40)+'px'});
 
 	$("nav li").click(function () {
       window.location.replace($(this).find('a').attr('href'));
@@ -77,7 +77,7 @@ $(document).ready(
 });
 
 $(window).resize(function() {
-	$('.caption').css({'right': (window.innerWidth/2)+($('.row').width()/(-1*2))+(20)+'px'});
+  $('.caption').css({'right': (1920/2)+($('.row').width()/(-1*2))+(40)+'px'});
 	var height = ($('.description').parent().height())/4;
 	$('.description').css({'top': height+'px'});
 });
