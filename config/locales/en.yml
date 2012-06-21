@@ -23,7 +23,7 @@ en:
             no_items_yet: 'There are no %{type} comments.'
           show:
             comment: Comment
-            blog_post: Blog Post
+            blog_post: Post
             from: Posted by
             date: Posted at
             message: Comment
