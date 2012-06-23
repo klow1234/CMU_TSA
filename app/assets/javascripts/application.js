@@ -76,13 +76,13 @@ $(document).ready(
 	});
   $('.members .info').css({'width': $('.members img').width()-40 + 'px'});
   $('.members .info').css({'height': $('.members img').height()-40 + 'px'});
-  $('.members img').hover(
+  $('.members').hover(
     function () {
-      $(this).fadeTo(250, 0.2);
+      $(this).find('img').fadeTo(250, 0.2);
       $(this).parent().find('.info').fadeIn(250);
     }, 
     function () {
-      $(this).fadeTo(250, 1);
+      $(this).find('img').fadeTo(250, 1);
       $(this).parent().find(".info").fadeOut(250);
     }
   );
