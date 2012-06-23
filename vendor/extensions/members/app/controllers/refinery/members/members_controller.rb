@@ -22,7 +22,7 @@ module Refinery
     protected
 
       def find_all_members
-        @members = Member.order('position ASC')
+        @members = Member.order('grad_year DESC AND name DESC')
       end
 
       def find_page
