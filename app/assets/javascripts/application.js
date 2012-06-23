@@ -78,7 +78,7 @@ $(document).ready(
   $('.members .info').css({'height': $('.members img').height()-40 + 'px'});
   $('.members img').hover(
     function () {
-      $(this).fadeTo(250, 0.3);
+      $(this).fadeTo(250, 0.2);
       $(this).parent().find('.info').fadeIn(250);
     }, 
     function () {
