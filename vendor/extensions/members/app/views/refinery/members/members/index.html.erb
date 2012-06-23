@@ -2,10 +2,10 @@
 <div class='members_index'>
   <div class='row inquiries'>
   <% @members.each_with_index do |member, i| %>
-    <% if i != 0 && i % 5 == 0 %>
+    <% if i != 0 && i % 4 == 0 %>
       </div><div class='row'>
     <% end %>
-    <% if i != 0 && i % 4 == 0 %>
+    <% if i != 0 && i % 3 == 0 %>
       <div class="threecol last">
     <% else %>
       <div class="threecol">
