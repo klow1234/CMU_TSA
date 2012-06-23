@@ -351,6 +351,8 @@ footer p {
 	}
 	img {
 		z-index:1;
+		-moz-border-radius: 2px;
+		border-radius: 2px;
 		&:hover {
 			opacity:0.8;
 		}
@@ -412,6 +414,8 @@ h1 {
 		overflow:hidden;
 		max-height:250px;
 		float:left;
+		-moz-border-radius: 2px;
+		border-radius: 2px;
 	}
 	.text {
 		-webkit-font-smoothing: antialiased; 
@@ -474,6 +478,8 @@ h1 {
 		}
 		img {
 			width:100%;
+			-moz-border-radius: 2px;
+			border-radius: 2px;
 		}
 	}
 }
