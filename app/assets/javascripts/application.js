@@ -74,10 +74,24 @@ $(document).ready(
 	$(".description").click(function () {
 		window.location.replace($(this).parent().find('a').attr('href'));
 	});
+  $('.members .info').css({'width': $('.members img').width()-40 + 'px'});
+  $('.members .info').css({'height': $('.members img').height()-40 + 'px'});
+  $('.members img').hover(
+    function () {
+      $(this).fadeTo(250, 0.3);
+      $(this).parent().find('.info').fadeIn(250);
+    }, 
+    function () {
+      $(this).fadeTo(250, 1);
+      $(this).parent().find(".info").fadeOut(250);
+    }
+  );
 });
 
 $(window).resize(function() {
   $('.caption').css({'right': (1920/2)+($('.row').width()/(-1*2))+(40)+'px'});
 	var height = ($('.description').parent().height())/4;
 	$('.description').css({'top': height+'px'});
+  $('.members .info').css({'width': $('.members img').width()-40 + 'px'});
+  $('.members .info').css({'height': $('.members img').height()-40 + 'px'});
 });

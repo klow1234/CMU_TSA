@@ -23,3 +23,6 @@ Refinery::Officers::Engine.load_seed
 
 # Added by Refinery CMS Sliding Images extension
 Refinery::SlidingImages::Engine.load_seed
+
+# Added by Refinery CMS Members extension
+Refinery::Members::Engine.load_seed
