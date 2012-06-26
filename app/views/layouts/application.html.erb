@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <%= render '/refinery/html_tag' %>
   <!--
-    Hello stranger. Why are you exmaining the source code for this website?
+    Hello stranger. Why are you examining the source code for this website?
     There is nothing to find here. 
 
     If you really want to check out the source, head on over to
     http://github.com/yihuanz/CMU_TSA
-    It really is much easier to read.
+    It is formatted nicely and I think it is much easier to read.
   -->
   <% site_bar = render('/refinery/site_bar', :head => true) -%>
   <%= render '/refinery/head' %>
@@ -14,7 +14,7 @@
     <%= site_bar -%>
     <%= render '/refinery/ie6check' if request.env['HTTP_USER_AGENT'] =~ /MSIE/ -%>
     <div class="container"> 
-      <div id="page_container">
+      <div id="page_container" class="logo_color titlebar">
         <div class="row logo_color">
           <div class="nav_bar">
             <div class="onecol last">

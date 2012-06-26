@@ -130,6 +130,7 @@ nav {
 	overflow:hidden;
 	clear:left;
 	margin:0;
+	padding-top:50px;
 	height:400px;
 	background: #efefef;
 }
@@ -231,7 +232,7 @@ nav {
 }
 
 #body_content {
-	padding:0px 30px 30px 30px;
+	padding:50px 30px 30px 30px;
 	
 }
 #blog_posts {
@@ -251,6 +252,12 @@ nav {
 
 .logo_color {
 	background:#3cb3d0;
+}
+
+.titlebar {
+	position:fixed;
+	z-index:10;
+	width:100%;
 }
 
 p {
