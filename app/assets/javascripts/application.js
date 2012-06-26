@@ -56,6 +56,12 @@ var next=self.active.parents('li:first').next().find('img');if(next.length==0){n
 
 // Initializing the full width slider
 
+window.onload = function() {
+    if (window.location.toString().charAt(window.location.toString().length-1) == '/' || window.location.toString().charAt(window.location.toString().length-1) == '#' || window.location.toString().indexOf('blog') >= 0) {
+      $('#body_content').css({'padding-top': 0+'px'});
+    }
+  };
+
 $(document).ready(
 	function (){
 		$("#fullwidth_slider").PikaChoose({transition:[0]}); // 0: full frame cross fade
@@ -86,6 +92,7 @@ $(document).ready(
       $(this).parent().find(".info").fadeOut(250);
     }
   );
+
 });
 
 $(window).resize(function() {
