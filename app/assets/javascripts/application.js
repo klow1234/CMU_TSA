@@ -64,7 +64,17 @@ window.onload = function() {
 
 $(document).ready(
 	function (){
-		$("#fullwidth_slider").PikaChoose({transition:[0]}); // 0: full frame cross fade
+    var jmpressOpts = {
+      animation   : { transitionDuration : '0.8s' }
+    };
+        
+    $( '#jms-slideshow' ).jmslideshow( $.extend( true, { jmpressOpts : jmpressOpts }, {
+      autoplay  : true,
+      bgColorSpeed: '0.8s',
+      arrows    : true
+    }));
+    
+    $("#fullwidth_slider").PikaChoose({transition:[0]}); // 0: full frame cross fade
 		// $("#pikame").PikaChoose({transition:[1]}); // 1: paneled fold out
 		// $("#pikame").PikaChoose({transition:[2]}); // 2: horizontal blinds
 		// $("#pikame").PikaChoose({transition:[3]}); // 3: vertical blinds
