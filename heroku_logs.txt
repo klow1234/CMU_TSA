@@ -1,300 +1,301 @@
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/abstract_controller/rendering.rb:88:in `render'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:39:in `render'
-2012-06-23T07:09:59+00:00 heroku[router]: GET cmutsa.org/members dyno=web.1 queue=0 wait=0ms service=179ms status=500 bytes=643
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.3/lib/active_record/connection_adapters/postgresql_adapter.rb:663:in `block in exec_query'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.3/lib/active_record/connection_adapters/abstract/query_cache.rb:61:in `select_all'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_view/helpers/capture_helper.rb:40:in `capture'
-2012-06-23T07:09:59+00:00 app[web.1]: : SELECT "refinery_members".* FROM "refinery_members"  ORDER BY grad_year DESC AND name DESC):
-2012-06-23T07:09:59+00:00 app[web.1]:     3: <div class='members_index'>
-2012-06-23T07:09:59+00:00 app[web.1]:     7:       </div><div class='row'>
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/journey-1.0.4/lib/journey/router.rb:56:in `call'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/routing/route_set.rb:600:in `call'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/journey-1.0.4/lib/journey/router.rb:56:in `each'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/routing/route_set.rb:600:in `call'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/notifications.rb:123:in `instrument'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_controller/metal/params_wrapper.rb:205:in `process_action'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_controller/metal.rb:246:in `block in action'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/warden-1.1.1/lib/warden/manager.rb:35:in `block in call'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/notifications.rb:125:in `instrument'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.3/lib/active_record/connection_adapters/abstract/database_statements.rb:18:in `select_all'
-2012-06-23T07:09:59+00:00 app[web.1]:                                                              ^
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.3/lib/active_record/connection_adapters/abstract_adapter.rb:275:in `log'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.3/lib/active_record/querying.rb:37:in `find_by_sql'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.3/lib/active_record/connection_adapters/postgresql_adapter.rb:1234:in `select'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/extensions/members/app/views/refinery/members/members/index.html.erb:5:in `block in _vendor_extensions_members_app_views_refinery_members_members_index_html_erb___520129940588556251_53460720'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.3/lib/active_record/connection_adapters/abstract/query_cache.rb:61:in `block in select_all'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.3/lib/active_record/querying.rb:38:in `block in find_by_sql'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_view/template.rb:143:in `block in render'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.3/lib/active_record/query_cache.rb:64:in `call'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-cache-1.2/lib/rack/cache/context.rb:245:in `fetch'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-cache-1.2/lib/rack/cache/context.rb:136:in `forward'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/dragonfly-0.9.12/lib/dragonfly/cookie_monster.rb:9:in `call'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-cache-1.2/lib/rack/cache/context.rb:136:in `forward'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/dragonfly-0.9.12/lib/dragonfly/middleware.rb:13:in `call'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/request_id.rb:22:in `call'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-1.4.1/lib/rack/runtime.rb:17:in `call'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/railties-3.2.3/lib/rails/engine.rb:479:in `call'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/flash.rb:242:in `call'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-cache-1.2/lib/rack/cache/context.rb:185:in `lookup'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:405:in `__run_callback'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.3/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_controller/metal.rb:203:in `dispatch'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_view/template.rb:141:in `render'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/notifications.rb:123:in `instrument'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_controller/metal/renderers.rb:28:in `render_to_body'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.3/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.3/lib/active_record/relation.rb:159:in `to_a'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_view/renderer/renderer.rb:17:in `render'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_controller/metal/streaming.rb:225:in `_render_template'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/abstract_controller/base.rb:167:in `process_action'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_controller/metal/rendering.rb:10:in `process_action'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:81:in `run_callbacks'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/railties-3.2.3/lib/rails/rack/logger.rb:26:in `call_app'
-2012-06-23T07:09:59+00:00 app[web.1]:   /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
-2012-06-23T07:09:59+00:00 app[web.1]: 
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/static.rb:62:in `call'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/railties-3.2.3/lib/rails/rack/log_tailer.rb:14:in `call'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-cache-1.2/lib/rack/cache/context.rb:51:in `call'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
-2012-06-23T07:09:59+00:00 app[web.1]:   /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
-2012-06-23T07:09:59+00:00 app[web.1]: Processing by Refinery::Members::MembersController#index as HTML
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/warden-1.1.1/lib/warden/manager.rb:34:in `call'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/head.rb:14:in `call'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/cookies.rb:338:in `call'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_controller/metal/rescue.rb:29:in `process_action'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/notifications.rb:123:in `block in instrument'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/routing/route_set.rb:36:in `call'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/journey-1.0.4/lib/journey/router.rb:68:in `block in call'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/abstract_controller/rendering.rb:45:in `process'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/journey-1.0.4/lib/journey/router.rb:68:in `block in call'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/railties-3.2.3/lib/rails/engine.rb:479:in `call'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-cache-1.2/lib/rack/cache/context.rb:66:in `call!'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/journey-1.0.4/lib/journey/router.rb:56:in `each'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:405:in `_run__3461318685265150643__call__107359238242234249__callbacks'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/dragonfly-0.9.12/lib/dragonfly/middleware.rb:13:in `call'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/railties-3.2.3/lib/rails/railtie/configurable.rb:30:in `method_missing'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:467:in `call'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/journey-1.0.4/lib/journey/router.rb:56:in `call'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-1.4.1/lib/rack/session/abstract/id.rb:200:in `call'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-1.4.1/lib/rack/conditionalget.rb:25:in `call'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:405:in `__run_callback'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:81:in `run_callbacks'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-cache-1.2/lib/rack/cache/context.rb:245:in `fetch'
-2012-06-23T07:09:59+00:00 app[web.1]:   Parameters: {"locale"=>:en}
-2012-06-23T07:09:59+00:00 app[web.1]:   Rendered vendor/extensions/members/app/views/refinery/members/members/index.html.erb within layouts/application (27.1ms)
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-cache-1.2/lib/rack/cache/context.rb:51:in `call'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-1.4.1/lib/rack/content_length.rb:14:in `call'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-1.4.1/lib/rack/handler/webrick.rb:59:in `service'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/railties-3.2.3/lib/rails/application.rb:220:in `call'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-1.4.1/lib/rack/methodoverride.rb:21:in `call'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/railties-3.2.3/lib/rails/rack/logger.rb:16:in `call'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-1.4.1/lib/rack/lock.rb:15:in `call'
-2012-06-23T07:09:59+00:00 app[web.1]:   /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
-2012-06-23T07:09:59+00:00 app[web.1]: 
-2012-06-23T07:09:59+00:00 app[web.1]:     5:   <% @members.each_with_index do |member, i| %>
-2012-06-23T07:09:59+00:00 app[web.1]:     8:     <% end %>
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_view/helpers/capture_helper.rb:40:in `block in capture'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/extensions/members/app/views/refinery/members/members/index.html.erb:1:in `_vendor_extensions_members_app_views_refinery_members_members_index_html_erb___520129940588556251_53460720'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_controller/metal/rendering.rb:16:in `render'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/core_ext/benchmark.rb:5:in `ms'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/refinerycms-pages-2.0.5/lib/refinery/pages/instance_methods.rb:28:in `render_with_presenters'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/abstract_controller/base.rb:121:in `process'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/routing/route_set.rb:73:in `call'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/warden-1.1.1/lib/warden/manager.rb:34:in `catch'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-1.4.1/lib/rack/etag.rb:23:in `call'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-1.4.1/lib/rack/session/abstract/id.rb:205:in `context'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-cache-1.2/lib/rack/cache/context.rb:66:in `call!'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-cache-1.2/lib/rack/cache/context.rb:185:in `lookup'
-2012-06-23T07:09:59+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
-2012-06-23T07:09:59+00:00 app[web.1]: 
-2012-06-23T07:09:59+00:00 app[web.1]: Completed 500 Internal Server Error in 170ms
-2012-06-23T07:10:03+00:00 app[web.1]: 
-2012-06-23T07:10:03+00:00 app[web.1]: 
-2012-06-23T07:10:03+00:00 app[web.1]: Started GET "/members" for 67.172.16.217 at 2012-06-23 07:10:03 +0000
-2012-06-23T07:10:03+00:00 app[web.1]: 
-2012-06-23T07:10:03+00:00 app[web.1]: ActionView::Template::Error (PGError: ERROR:  syntax error at or near "AND"
-2012-06-23T07:10:03+00:00 app[web.1]: LINE 1: ... FROM "refinery_members"  ORDER BY grad_year DESC AND name D...
-2012-06-23T07:10:03+00:00 app[web.1]:                                                              ^
-2012-06-23T07:10:03+00:00 app[web.1]: : SELECT "refinery_members".* FROM "refinery_members"  ORDER BY grad_year DESC AND name DESC):
-2012-06-23T07:10:03+00:00 app[web.1]:     2: <p>Look at all the diverse members we have!</p>
-2012-06-23T07:10:03+00:00 app[web.1]:     3: <div class='members_index'>
-2012-06-23T07:10:03+00:00 app[web.1]:     4:   <div class='row inquiries'>
-2012-06-23T07:10:03+00:00 heroku[router]: GET cmutsa.org/members dyno=web.1 queue=0 wait=0ms service=150ms status=500 bytes=643
-2012-06-23T07:10:03+00:00 app[web.1]:     8:     <% end %>
-2012-06-23T07:10:03+00:00 app[web.1]:     5:   <% @members.each_with_index do |member, i| %>
-2012-06-23T07:10:03+00:00 app[web.1]:     6:     <% if i != 0 && i % 4 == 0 %>
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.3/lib/active_record/connection_adapters/postgresql_adapter.rb:1139:in `exec_no_cache'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.3/lib/active_record/connection_adapters/postgresql_adapter.rb:663:in `block in exec_query'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.3/lib/active_record/connection_adapters/postgresql_adapter.rb:1139:in `async_exec'
-2012-06-23T07:10:03+00:00 app[web.1]:     7:       </div><div class='row'>
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.3/lib/active_record/connection_adapters/abstract_adapter.rb:280:in `block in log'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.3/lib/active_record/connection_adapters/abstract/query_cache.rb:61:in `block in select_all'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.3/lib/active_record/connection_adapters/abstract/database_statements.rb:18:in `select_all'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.3/lib/active_record/connection_adapters/postgresql_adapter.rb:662:in `exec_query'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.3/lib/active_record/connection_adapters/postgresql_adapter.rb:1234:in `select'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.3/lib/active_record/connection_adapters/abstract_adapter.rb:275:in `log'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.3/lib/active_record/querying.rb:37:in `find_by_sql'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.3/lib/active_record/querying.rb:38:in `block in find_by_sql'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.3/lib/active_record/connection_adapters/abstract/query_cache.rb:61:in `select_all'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.3/lib/active_record/connection_adapters/abstract/query_cache.rb:75:in `cache_sql'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.3/lib/active_record/relation/delegation.rb:36:in `each_with_index'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_view/helpers/capture_helper.rb:40:in `block in capture'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.3/lib/active_record/explain.rb:40:in `logging_query_plan'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_view/helpers/capture_helper.rb:187:in `with_output_buffer'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.3/lib/active_record/relation.rb:171:in `exec_queries'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.3/lib/active_record/relation.rb:160:in `block in to_a'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.3/lib/active_record/relation.rb:159:in `to_a'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.3/lib/active_record/explain.rb:40:in `logging_query_plan'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/extensions/members/app/views/refinery/members/members/index.html.erb:5:in `block in _vendor_extensions_members_app_views_refinery_members_members_index_html_erb___520129940588556251_53460720'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_view/template.rb:143:in `block in render'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_view/helpers/capture_helper.rb:40:in `capture'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_view/helpers/capture_helper.rb:138:in `content_for'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/extensions/members/app/views/refinery/members/members/index.html.erb:1:in `_vendor_extensions_members_app_views_refinery_members_members_index_html_erb___520129940588556251_53460720'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_view/template.rb:141:in `render'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/notifications.rb:125:in `instrument'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/notifications.rb:123:in `block in instrument'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/notifications.rb:123:in `instrument'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_view/renderer/template_renderer.rb:45:in `render_template'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_view/renderer/template_renderer.rb:18:in `render'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_view/renderer/renderer.rb:36:in `render_template'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_view/renderer/renderer.rb:17:in `render'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/abstract_controller/rendering.rb:110:in `_render_template'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/abstract_controller/rendering.rb:103:in `render_to_body'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_controller/metal/streaming.rb:225:in `_render_template'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_controller/metal/renderers.rb:28:in `render_to_body'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/abstract_controller/rendering.rb:88:in `render'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_controller/metal/rendering.rb:16:in `render'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
-2012-06-23T07:10:03+00:00 app[web.1]:   /usr/local/lib/ruby/1.9.1/benchmark.rb:310:in `realtime'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/core_ext/benchmark.rb:5:in `ms'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.3/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:39:in `render'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/refinerycms-pages-2.0.5/lib/refinery/pages/instance_methods.rb:28:in `render_with_presenters'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/abstract_controller/base.rb:167:in `process_action'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_controller/metal/rendering.rb:10:in `process_action'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:469:in `_run__1020627023021213922__process_action__2426576492177034625__callbacks'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:405:in `__run_callback'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
-2012-06-23T07:10:03+00:00 heroku[nginx]: 67.172.16.217 - - [23/Jun/2012:07:10:03 +0000] "GET /members HTTP/1.1" 500 643 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.11 (KHTML, like Gecko) Chrome/20.0.1132.34 Safari/536.11" cmutsa.org
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:81:in `run_callbacks'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/abstract_controller/callbacks.rb:17:in `process_action'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_controller/metal/rescue.rb:29:in `process_action'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/notifications.rb:123:in `block in instrument'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/notifications.rb:123:in `instrument'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_controller/metal/params_wrapper.rb:205:in `process_action'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.3/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/abstract_controller/base.rb:121:in `process'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/abstract_controller/rendering.rb:45:in `process'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_controller/metal.rb:203:in `dispatch'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_controller/metal.rb:246:in `block in action'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/routing/route_set.rb:73:in `call'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/routing/route_set.rb:36:in `call'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/journey-1.0.4/lib/journey/router.rb:68:in `block in call'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/journey-1.0.4/lib/journey/router.rb:56:in `each'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/journey-1.0.4/lib/journey/router.rb:56:in `call'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/routing/route_set.rb:600:in `call'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/railties-3.2.3/lib/rails/engine.rb:479:in `call'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/railties-3.2.3/lib/rails/railtie/configurable.rb:30:in `method_missing'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/journey-1.0.4/lib/journey/router.rb:68:in `block in call'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/journey-1.0.4/lib/journey/router.rb:56:in `each'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/journey-1.0.4/lib/journey/router.rb:56:in `call'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/routing/route_set.rb:600:in `call'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/warden-1.1.1/lib/warden/manager.rb:35:in `block in call'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/warden-1.1.1/lib/warden/manager.rb:34:in `catch'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/warden-1.1.1/lib/warden/manager.rb:34:in `call'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-1.4.1/lib/rack/etag.rb:23:in `call'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-1.4.1/lib/rack/conditionalget.rb:25:in `call'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/head.rb:14:in `call'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/flash.rb:242:in `call'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-1.4.1/lib/rack/session/abstract/id.rb:205:in `context'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-1.4.1/lib/rack/session/abstract/id.rb:200:in `call'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/cookies.rb:338:in `call'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/dragonfly-0.9.12/lib/dragonfly/cookie_monster.rb:9:in `call'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.3/lib/active_record/query_cache.rb:64:in `call'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:467:in `call'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:405:in `_run__3461318685265150643__call__107359238242234249__callbacks'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:405:in `__run_callback'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:81:in `run_callbacks'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/dragonfly-0.9.12/lib/dragonfly/middleware.rb:13:in `call'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/dragonfly-0.9.12/lib/dragonfly/middleware.rb:13:in `call'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-cache-1.2/lib/rack/cache/context.rb:136:in `forward'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-cache-1.2/lib/rack/cache/context.rb:185:in `lookup'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-cache-1.2/lib/rack/cache/context.rb:245:in `fetch'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-cache-1.2/lib/rack/cache/context.rb:66:in `call!'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-cache-1.2/lib/rack/cache/context.rb:51:in `call'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-cache-1.2/lib/rack/cache/context.rb:136:in `forward'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-cache-1.2/lib/rack/cache/context.rb:245:in `fetch'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-cache-1.2/lib/rack/cache/context.rb:185:in `lookup'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-cache-1.2/lib/rack/cache/context.rb:66:in `call!'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-cache-1.2/lib/rack/cache/context.rb:51:in `call'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/railties-3.2.3/lib/rails/rack/logger.rb:26:in `call_app'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/railties-3.2.3/lib/rails/rack/logger.rb:16:in `call'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/request_id.rb:22:in `call'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-1.4.1/lib/rack/lock.rb:15:in `call'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-1.4.1/lib/rack/methodoverride.rb:21:in `call'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-1.4.1/lib/rack/runtime.rb:17:in `call'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/static.rb:62:in `call'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/railties-3.2.3/lib/rails/engine.rb:479:in `call'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/railties-3.2.3/lib/rails/application.rb:220:in `call'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-1.4.1/lib/rack/content_length.rb:14:in `call'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/railties-3.2.3/lib/rails/rack/log_tailer.rb:14:in `call'
-2012-06-23T07:10:03+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-1.4.1/lib/rack/handler/webrick.rb:59:in `service'
-2012-06-23T07:10:03+00:00 app[web.1]:   /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
-2012-06-23T07:10:03+00:00 app[web.1]:   /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
-2012-06-23T07:10:03+00:00 app[web.1]:   /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
-2012-06-23T07:10:03+00:00 app[web.1]: 
-2012-06-23T07:10:03+00:00 app[web.1]: 
-2012-06-23T07:10:03+00:00 app[web.1]: Processing by Refinery::Members::MembersController#index as HTML
-2012-06-23T07:10:03+00:00 app[web.1]:   Parameters: {"locale"=>:en}
-2012-06-23T07:10:03+00:00 app[web.1]:   Rendered vendor/extensions/members/app/views/refinery/members/members/index.html.erb within layouts/application (5.1ms)
-2012-06-23T07:10:03+00:00 app[web.1]: Completed 500 Internal Server Error in 110ms
+2012-06-28T17:51:43+00:00 heroku[nginx]: 178.154.243.85 - - [28/Jun/2012:17:51:43 +0000] "GET /robots.txt HTTP/1.1" 200 204 "-" "Mozilla/5.0 (compatible; YandexImages/3.0; +http://yandex.com/bots)" cmutsa.org
+2012-06-28T18:23:12+00:00 heroku[router]: GET cmutsa.org/robots.txt dyno=web.1 queue=0 wait=0ms service=4ms status=200 bytes=204
+2012-06-28T18:23:12+00:00 heroku[nginx]: 207.46.13.99 - - [28/Jun/2012:18:23:12 +0000] "GET /robots.txt HTTP/1.1" 200 204 "-" "Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)" cmutsa.org
+2012-06-28T18:23:59+00:00 app[web.1]: => Booting WEBrick
+2012-06-28T18:23:59+00:00 app[web.1]: => Rails 3.2.3 application starting in production on http://0.0.0.0:32947
+2012-06-28T18:23:59+00:00 app[web.1]: => Call with -d to detach
+2012-06-28T18:23:59+00:00 app[web.1]: 
+2012-06-28T18:23:59+00:00 app[web.1]: => Ctrl-C to shutdown server
+2012-06-28T18:23:59+00:00 app[web.1]: 
+2012-06-28T18:23:59+00:00 app[web.1]: Started GET "/contact" for 207.46.13.99 at 2012-06-28 18:23:59 +0000
+2012-06-28T18:24:00+00:00 app[web.1]: -- DEPRECATION WARNING --
+2012-06-28T18:24:00+00:00 app[web.1]: 
+2012-06-28T18:24:00+00:00 app[web.1]: The use of 'content_for :body_content_left' is deprecated and will be removed at version 2.1.0.
+2012-06-28T18:24:00+00:00 app[web.1]: Please use content_for :body instead.
+2012-06-28T18:24:01+00:00 app[web.1]: Processing by Refinery::Inquiries::InquiriesController#new as */*
+2012-06-28T18:24:01+00:00 app[web.1]:   Parameters: {"locale"=>:en}
+2012-06-28T18:24:01+00:00 app[web.1]:   Rendered vendor/bundle/ruby/1.9.1/gems/refinerycms-core-2.0.5/app/views/refinery/_menu.html.erb (195.8ms)
+2012-06-28T18:24:01+00:00 app[web.1]:   Rendered refinery/inquiries/inquiries/new.html.erb within layouts/application (579.4ms)
+2012-06-28T18:24:01+00:00 app[web.1]:   Rendered vendor/bundle/ruby/1.9.1/gems/refinerycms-core-2.0.5/app/views/refinery/_html_tag.html.erb (0.4ms)
+2012-06-28T18:24:01+00:00 app[web.1]:   Rendered refinery/_content_page.html.erb (472.5ms)
+2012-06-28T18:24:01+00:00 app[web.1]:   Rendered vendor/bundle/ruby/1.9.1/gems/refinerycms-core-2.0.5/app/views/refinery/admin/_error_messages.html.erb (0.7ms)
+2012-06-28T18:24:01+00:00 app[web.1]:   Rendered vendor/bundle/ruby/1.9.1/gems/refinerycms-core-2.0.5/app/views/refinery/_site_bar.html.erb (1.0ms)
+2012-06-28T18:24:01+00:00 app[web.1]:   Rendered vendor/bundle/ruby/1.9.1/gems/refinerycms-core-2.0.5/app/views/refinery/_head.html.erb (28.7ms)
+2012-06-28T18:24:01+00:00 app[web.1]:   Rendered vendor/bundle/ruby/1.9.1/gems/refinerycms-core-2.0.5/app/views/refinery/_footer.html.erb (0.5ms)
+2012-06-28T18:24:01+00:00 app[web.1]: Completed 200 OK in 1629ms (Views: 928.0ms | ActiveRecord: 202.2ms)
+2012-06-28T18:24:01+00:00 app[web.1]:   Rendered vendor/bundle/ruby/1.9.1/gems/refinerycms-core-2.0.5/app/views/refinery/_google_analytics.html.erb (0.7ms)
+2012-06-28T18:24:01+00:00 app[web.1]:   Rendered vendor/bundle/ruby/1.9.1/gems/refinerycms-core-2.0.5/app/views/refinery/_menu_branch.html.erb (5.3ms)
+2012-06-28T18:24:01+00:00 app[web.1]:   Rendered vendor/bundle/ruby/1.9.1/gems/refinerycms-core-2.0.5/app/views/refinery/_javascripts.html.erb (0.8ms)
+2012-06-28T18:24:01+00:00 heroku[router]: GET cmutsa.org/contact dyno=web.1 queue=0 wait=0ms service=2111ms status=200 bytes=4904
+2012-06-28T18:24:01+00:00 heroku[nginx]: 207.46.13.99 - - [28/Jun/2012:18:24:01 +0000] "GET /contact HTTP/1.1" 200 1827 "-" "Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)" cmutsa.org
+2012-06-28T18:52:34+00:00 app[web.1]: 
+2012-06-28T18:52:34+00:00 app[web.1]: Started GET "/members" for 199.21.99.74 at 2012-06-28 18:52:34 +0000
+2012-06-28T18:52:34+00:00 app[web.1]: 
+2012-06-28T18:52:34+00:00 app[web.1]: 
+2012-06-28T18:52:34+00:00 app[web.1]: The use of 'content_for :body_content_left' is deprecated and will be removed at version 2.1.0.
+2012-06-28T18:52:34+00:00 app[web.1]: -- DEPRECATION WARNING --
+2012-06-28T18:52:34+00:00 app[web.1]: Please use content_for :body instead.
+2012-06-28T18:52:34+00:00 app[web.1]: Processing by Refinery::Members::MembersController#index as */*
+2012-06-28T18:52:34+00:00 app[web.1]:   Rendered refinery/_content_page.html.erb (12.4ms)
+2012-06-28T18:52:34+00:00 app[web.1]:   Parameters: {"locale"=>:en}
+2012-06-28T18:52:34+00:00 app[web.1]:   Rendered vendor/extensions/members/app/views/refinery/members/members/index.html.erb within layouts/application (485.4ms)
+2012-06-28T18:52:34+00:00 app[web.1]:   Rendered vendor/bundle/ruby/1.9.1/gems/refinerycms-core-2.0.5/app/views/refinery/_html_tag.html.erb (0.1ms)
+2012-06-28T18:52:34+00:00 app[web.1]:   Rendered vendor/bundle/ruby/1.9.1/gems/refinerycms-core-2.0.5/app/views/refinery/_head.html.erb (5.7ms)
+2012-06-28T18:52:34+00:00 app[web.1]:   Rendered vendor/bundle/ruby/1.9.1/gems/refinerycms-core-2.0.5/app/views/refinery/_site_bar.html.erb (0.3ms)
+2012-06-28T18:52:34+00:00 app[web.1]:   Rendered vendor/bundle/ruby/1.9.1/gems/refinerycms-core-2.0.5/app/views/refinery/_google_analytics.html.erb (0.1ms)
+2012-06-28T18:52:34+00:00 app[web.1]:   Rendered vendor/bundle/ruby/1.9.1/gems/refinerycms-core-2.0.5/app/views/refinery/_menu_branch.html.erb (1.5ms)
+2012-06-28T18:52:34+00:00 app[web.1]:   Rendered vendor/bundle/ruby/1.9.1/gems/refinerycms-core-2.0.5/app/views/refinery/_footer.html.erb (0.3ms)
+2012-06-28T18:52:34+00:00 app[web.1]:   Rendered vendor/bundle/ruby/1.9.1/gems/refinerycms-core-2.0.5/app/views/refinery/_menu.html.erb (10.0ms)
+2012-06-28T18:52:34+00:00 app[web.1]: Completed 200 OK in 524ms (Views: 182.5ms | ActiveRecord: 336.0ms)
+2012-06-28T18:52:34+00:00 app[web.1]:   Rendered vendor/bundle/ruby/1.9.1/gems/refinerycms-core-2.0.5/app/views/refinery/_javascripts.html.erb (0.5ms)
+2012-06-28T18:52:34+00:00 heroku[router]: GET cmutsa.org/members dyno=web.1 queue=0 wait=0ms service=542ms status=200 bytes=34804
+2012-06-28T18:52:34+00:00 heroku[nginx]: 199.21.99.74 - - [28/Jun/2012:18:52:34 +0000] "GET /members HTTP/1.1" 200 6355 "-" "Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)" cmutsa.org
+2012-06-28T19:58:15+00:00 heroku[web.1]: Idling
+2012-06-28T19:58:17+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2012-06-28T19:58:18+00:00 app[web.1]: [2012-06-28 19:58:18] ERROR SignalException: SIGTERM
+2012-06-28T19:58:18+00:00 app[web.1]: 	/usr/local/lib/ruby/1.9.1/webrick/server.rb:90:in `select'
+2012-06-28T19:58:27+00:00 heroku[web.1]: Error R12 (Exit timeout) -> At least one process failed to exit within 10 seconds of SIGTERM
+2012-06-28T19:58:27+00:00 heroku[web.1]: Stopping remaining processes with SIGKILL
+2012-06-28T19:58:29+00:00 heroku[web.1]: Process exited with status 137
+2012-06-28T19:58:29+00:00 heroku[web.1]: State changed from up to down
+2012-06-28T20:03:50+00:00 heroku[web.1]: Unidling
+2012-06-28T20:03:50+00:00 heroku[web.1]: State changed from down to starting
+2012-06-28T20:03:56+00:00 heroku[web.1]: Starting process with command `bundle exec rails server -p 53170`
+2012-06-28T20:04:15+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/1/4/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
+2012-06-28T20:04:15+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/1/4/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
+2012-06-28T20:04:27+00:00 app[web.1]: [2012-06-28 20:04:27] INFO  WEBrick 1.3.1
+2012-06-28T20:04:27+00:00 app[web.1]: [2012-06-28 20:04:27] INFO  ruby 1.9.2 (2011-07-09) [x86_64-linux]
+2012-06-28T20:04:27+00:00 app[web.1]: [2012-06-28 20:04:27] INFO  WEBrick::HTTPServer#start: pid=1 port=53170
+2012-06-28T20:04:28+00:00 heroku[web.1]: State changed from starting to up
+2012-06-28T20:04:29+00:00 app[web.1]: => Booting WEBrick
+2012-06-28T20:04:29+00:00 app[web.1]: => Rails 3.2.3 application starting in production on http://0.0.0.0:53170
+2012-06-28T20:04:29+00:00 app[web.1]: => Call with -d to detach
+2012-06-28T20:04:29+00:00 app[web.1]: => Ctrl-C to shutdown server
+2012-06-28T20:04:29+00:00 app[web.1]: 
+2012-06-28T20:04:29+00:00 app[web.1]: 
+2012-06-28T20:04:29+00:00 app[web.1]: Started GET "/" for 67.172.16.217 at 2012-06-28 20:04:29 +0000
+2012-06-28T20:04:30+00:00 app[web.1]: -- DEPRECATION WARNING --
+2012-06-28T20:04:30+00:00 app[web.1]: 
+2012-06-28T20:04:30+00:00 app[web.1]: Please use content_for :body instead.
+2012-06-28T20:04:30+00:00 app[web.1]: The use of 'content_for 
+:body_content_left' is deprecated and will be removed at version 2.1.0.
+2012-06-28T20:04:31+00:00 app[web.1]:   Rendered refinery/_content_page.html.erb (29.4ms)
+2012-06-28T20:04:31+00:00 app[web.1]:   Rendered vendor/bundle/ruby/1.9.1/gems/refinerycms-core-2.0.5/app/views/refinery/_html_tag.html.erb (0.5ms)
+2012-06-28T20:04:31+00:00 app[web.1]:   Rendered refinery/blog/shared/_post.html.erb (33.5ms)
+2012-06-28T20:04:31+00:00 app[web.1]: Processing by Refinery::Blog::PostsController#index as HTML
+2012-06-28T20:04:31+00:00 app[web.1]:   Rendered vendor/bundle/ruby/1.9.1/gems/refinerycms-core-2.0.5/app/views/refinery/_google_analytics.html.erb (0.8ms)
+2012-06-28T20:04:31+00:00 app[web.1]:   Rendered refinery/blog/posts/index.html.erb within layouts/application (975.5ms)
+2012-06-28T20:04:31+00:00 app[web.1]:   Rendered vendor/bundle/ruby/1.9.1/gems/refinerycms-core-2.0.5/app/views/refinery/_site_bar.html.erb (1.2ms)
+2012-06-28T20:04:31+00:00 app[web.1]:   Rendered vendor/bundle/ruby/1.9.1/gems/refinerycms-core-2.0.5/app/views/refinery/_footer.html.erb (1.3ms)
+2012-06-28T20:04:31+00:00 app[web.1]:   Rendered vendor/bundle/ruby/1.9.1/gems/refinerycms-core-2.0.5/app/views/refinery/_menu.html.erb (128.3ms)
+2012-06-28T20:04:31+00:00 app[web.1]:   Rendered vendor/bundle/ruby/1.9.1/gems/refinerycms-core-2.0.5/app/views/refinery/_head.html.erb (26.1ms)
+2012-06-28T20:04:31+00:00 app[web.1]:   Rendered vendor/bundle/ruby/1.9.1/gems/refinerycms-core-2.0.5/app/views/refinery/_menu_branch.html.erb (6.8ms)
+2012-06-28T20:04:31+00:00 app[web.1]:   Rendered vendor/bundle/ruby/1.9.1/gems/refinerycms-core-2.0.5/app/views/refinery/_javascripts.html.erb (1.1ms)
+2012-06-28T20:04:31+00:00 app[web.1]: Completed 200 OK in 1947ms (Views: 1305.1ms | ActiveRecord: 172.6ms)
+2012-06-28T20:04:31+00:00 heroku[router]: GET cmutsa.org/ dyno=web.1 queue=0 wait=0ms service=2177ms status=200 bytes=8935
+2012-06-28T20:04:31+00:00 heroku[nginx]: 67.172.16.217 - - [28/Jun/2012:20:04:31 +0000] "GET / HTTP/1.1" 200 3068 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.11 (KHTML, like Gecko) Chrome/20.0.1132.43 Safari/536.11" cmutsa.org
+2012-06-28T20:04:31+00:00 heroku[router]: GET cmutsa.org/assets/application-5517b709ba03a549781c426de69ef7c0.css dyno=web.1 queue=0 wait=0ms service=11ms status=200 bytes=20650
+2012-06-28T20:04:31+00:00 heroku[nginx]: 67.172.16.217 - - [28/Jun/2012:20:04:31 +0000] "GET /assets/application-5517b709ba03a549781c426de69ef7c0.css HTTP/1.1" 304 0 "http://cmutsa.org/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.11 (KHTML, like Gecko) Chrome/20.0.1132.43 Safari/536.11" cmutsa.org
+2012-06-28T20:04:31+00:00 heroku[nginx]: 67.172.16.217 - - [28/Jun/2012:20:04:31 +0000] "GET /assets/application-e09b8229a77acb9b763a9e034ad27ac9.js HTTP/1.1" 304 0 "http://cmutsa.org/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.11 (KHTML, like Gecko) Chrome/20.0.1132.43 Safari/536.11" cmutsa.org
+2012-06-28T20:04:31+00:00 heroku[router]: GET cmutsa.org/assets/application-e09b8229a77acb9b763a9e034ad27ac9.js dyno=web.1 queue=0 wait=0ms service=10ms status=200 bytes=162496
+2012-06-28T20:04:31+00:00 heroku[router]: GET cmutsa.org/assets/tsa_logo-12655e7ce4d5d2cb51f32f6b4481d3e2.png dyno=web.1 queue=0 wait=0ms service=4ms status=200 bytes=5465
+2012-06-28T20:04:31+00:00 heroku[nginx]: 67.172.16.217 - - [28/Jun/2012:20:04:31 +0000] "GET /assets/tsa_logo-12655e7ce4d5d2cb51f32f6b4481d3e2.png HTTP/1.1" 304 0 "http://cmutsa.org/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.11 (KHTML, like Gecko) Chrome/20.0.1132.43 Safari/536.11" cmutsa.org
+2012-06-28T20:04:31+00:00 heroku[router]: GET cmutsa.org/assets/tgcbold.ttf dyno=web.1 queue=0 wait=0ms service=11ms status=200 bytes=75280
+2012-06-28T20:04:31+00:00 heroku[nginx]: 67.172.16.217 - - [28/Jun/2012:20:04:31 +0000] "GET /assets/tgcbold.ttf HTTP/1.1" 304 0 "http://cmutsa.org/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.11 (KHTML, like Gecko) Chrome/20.0.1132.43 Safari/536.11" cmutsa.org
+2012-06-28T20:04:32+00:00 heroku[router]: GET cmutsa.org/favicon.ico dyno=web.1 queue=0 wait=0ms service=26ms status=200 bytes=0
+2012-06-28T20:04:32+00:00 heroku[nginx]: 67.172.16.217 - - [28/Jun/2012:20:04:32 +0000] "GET /favicon.ico HTTP/1.1" 304 0 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.11 (KHTML, like Gecko) Chrome/20.0.1132.43 Safari/536.11" cmutsa.org
+2012-06-28T21:05:08+00:00 app[web.1]: 
+2012-06-28T21:05:08+00:00 app[web.1]: 
+2012-06-28T21:05:08+00:00 app[web.1]: Started GET "/events/7-official-labor-day-party" for 199.21.99.74 at 2012-06-28 21:05:08 +0000
+2012-06-28T21:05:08+00:00 app[web.1]: The use of 'content_for :body_content_left' is deprecated and will be removed at version 2.1.0.
+2012-06-28T21:05:08+00:00 app[web.1]: 
+2012-06-28T21:05:08+00:00 app[web.1]: Please use content_for :body instead.
+2012-06-28T21:05:08+00:00 app[web.1]: -- DEPRECATION WARNING --
+2012-06-28T21:05:08+00:00 app[web.1]: Processing by Refinery::Events::EventsController#show as */*
+2012-06-28T21:05:08+00:00 app[web.1]:   Rendered refinery/_content_page.html.erb (62.3ms)
+2012-06-28T21:05:08+00:00 app[web.1]:   Parameters: {"id"=>"7-official-labor-day-party", "locale"=>:en}
+2012-06-28T21:05:08+00:00 app[web.1]:   Rendered vendor/extensions/events/app/views/refinery/events/events/show.html.erb within layouts/application (64.0ms)
+2012-06-28T21:05:08+00:00 app[web.1]:   Rendered vendor/bundle/ruby/1.9.1/gems/refinerycms-core-2.0.5/app/views/refinery/_html_tag.html.erb (0.1ms)
+2012-06-28T21:05:08+00:00 app[web.1]:   Rendered vendor/bundle/ruby/1.9.1/gems/refinerycms-core-2.0.5/app/views/refinery/_google_analytics.html.erb (0.2ms)
+2012-06-28T21:05:08+00:00 app[web.1]:   Rendered vendor/bundle/ruby/1.9.1/gems/refinerycms-core-2.0.5/app/views/refinery/_site_bar.html.erb (0.3ms)
+2012-06-28T21:05:08+00:00 heroku[router]: GET cmutsa.org/events/7-official-labor-day-party dyno=web.1 queue=0 wait=0ms service=263ms status=200 bytes=3765
+2012-06-28T21:05:08+00:00 app[web.1]:   Rendered vendor/bundle/ruby/1.9.1/gems/refinerycms-core-2.0.5/app/views/refinery/_head.html.erb (11.3ms)
+2012-06-28T21:05:08+00:00 app[web.1]:   Rendered vendor/bundle/ruby/1.9.1/gems/refinerycms-core-2.0.5/app/views/refinery/_javascripts.html.erb (0.5ms)
+2012-06-28T21:05:08+00:00 app[web.1]:   Rendered vendor/bundle/ruby/1.9.1/gems/refinerycms-core-2.0.5/app/views/refinery/_menu_branch.html.erb (61.8ms)
+2012-06-28T21:05:08+00:00 app[web.1]:   Rendered vendor/bundle/ruby/1.9.1/gems/refinerycms-core-2.0.5/app/views/refinery/_menu.html.erb (94.1ms)
+2012-06-28T21:05:08+00:00 app[web.1]:   Rendered vendor/bundle/ruby/1.9.1/gems/refinerycms-core-2.0.5/app/views/refinery/_footer.html.erb (0.3ms)
+2012-06-28T21:05:08+00:00 app[web.1]: Completed 200 OK in 192ms (Views: 90.2ms | ActiveRecord: 96.0ms)
+2012-06-28T21:05:08+00:00 heroku[nginx]: 199.21.99.74 - - [28/Jun/2012:21:05:08 +0000] "GET /events/7-official-labor-day-party HTTP/1.1" 200 1495 "-" "Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)" cmutsa.org
+2012-06-28T21:06:01+00:00 heroku[web.1]: Idling
+2012-06-28T21:06:04+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2012-06-28T21:06:04+00:00 app[web.1]: 	/usr/local/lib/ruby/1.9.1/webrick/server.rb:90:in `select'
+2012-06-28T21:06:04+00:00 app[web.1]: [2012-06-28 21:06:04] ERROR SignalException: SIGTERM
+2012-06-28T21:06:13+00:00 heroku[web.1]: Error R12 (Exit timeout) -> At least one process failed to exit within 10 seconds of SIGTERM
+2012-06-28T21:06:13+00:00 heroku[web.1]: Stopping remaining processes with SIGKILL
+2012-06-28T21:06:15+00:00 heroku[web.1]: Process exited with status 137
+2012-06-28T21:06:15+00:00 heroku[web.1]: State changed from up to down
+2012-06-28T21:06:15+00:00 heroku[web.1]: State changed from down to starting
+2012-06-28T21:06:18+00:00 heroku[web.1]: Starting process with command `bundle exec rails server -p 44160`
+2012-06-28T21:06:30+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/1/4/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
+2012-06-28T21:06:30+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/1/4/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
+2012-06-28T21:06:43+00:00 app[web.1]: [2012-06-28 21:06:43] INFO  WEBrick 1.3.1
+2012-06-28T21:06:43+00:00 app[web.1]: [2012-06-28 21:06:43] INFO  ruby 1.9.2 (2011-07-09) [x86_64-linux]
+2012-06-28T21:06:43+00:00 app[web.1]: [2012-06-28 21:06:43] INFO  WEBrick::HTTPServer#start: pid=1 port=44160
+2012-06-28T21:06:44+00:00 heroku[web.1]: State changed from starting to up
+2012-06-28T21:06:57+00:00 app[web.1]: => Call with -d to detach
+2012-06-28T21:06:57+00:00 app[web.1]: => Booting WEBrick
+2012-06-28T21:06:57+00:00 app[web.1]: Started GET "/blog/posts/derp" for 199.21.99.74 at 2012-06-28 21:06:57 +0000
+2012-06-28T21:06:57+00:00 app[web.1]: => Rails 3.2.3 application starting in production on http://0.0.0.0:44160
+2012-06-28T21:06:57+00:00 app[web.1]: => Ctrl-C to shutdown server
+2012-06-28T21:06:57+00:00 app[web.1]: 
+2012-06-28T21:06:57+00:00 app[web.1]: 
+2012-06-28T21:06:58+00:00 app[web.1]: Scoped order and limit are ignored, it's forced to be batch order and batch size
+2012-06-28T21:07:01+00:00 app[web.1]: 
+2012-06-28T21:07:01+00:00 app[web.1]: -- DEPRECATION WARNING --
+2012-06-28T21:07:01+00:00 app[web.1]: Please use content_for :body instead.
+2012-06-28T21:07:01+00:00 app[web.1]: The use of 'content_for :body_content_left' is deprecated and will be removed at version 2.1.0.
+2012-06-28T21:07:01+00:00 heroku[router]: GET cmutsa.org/blog/posts/derp dyno=web.1 queue=0 wait=0ms service=4611ms status=200 bytes=5757
+2012-06-28T21:07:01+00:00 app[web.1]:   Rendered refinery/_content_page.html.erb (436.0ms)
+2012-06-28T21:07:01+00:00 app[web.1]:   Rendered vendor/bundle/ruby/1.9.1/gems/refinerycms-core-2.0.5/app/views/refinery/_site_bar.html.erb (1.2ms)
+2012-06-28T21:07:01+00:00 app[web.1]:   Rendered vendor/bundle/ruby/1.9.1/gems/refinerycms-core-2.0.5/app/views/refinery/_google_analytics.html.erb (0.9ms)
+2012-06-28T21:07:01+00:00 app[web.1]:   Parameters: {"id"=>"derp", "locale"=>:en}
+2012-06-28T21:07:01+00:00 app[web.1]:   Rendered vendor/bundle/ruby/1.9.1/gems/refinerycms-core-2.0.5/app/views/refinery/_head.html.erb (8.3ms)
+2012-06-28T21:07:01+00:00 app[web.1]:   Rendered refinery/blog/posts/_nav.html.erb (4.5ms)
+2012-06-28T21:07:01+00:00 app[web.1]:   Rendered refinery/blog/posts/_post.html.erb (16.4ms)
+2012-06-28T21:07:01+00:00 app[web.1]: Processing by Refinery::Blog::PostsController#show as */*
+2012-06-28T21:07:01+00:00 app[web.1]:   Rendered vendor/bundle/ruby/1.9.1/gems/refinerycms-core-2.0.5/app/views/refinery/_menu.html.erb (169.0ms)
+2012-06-28T21:07:01+00:00 app[web.1]:   Rendered vendor/bundle/ruby/1.9.1/gems/refinerycms-core-2.0.5/app/views/refinery/_menu_branch.html.erb (5.3ms)
+2012-06-28T21:07:01+00:00 app[web.1]:   Rendered vendor/bundle/ruby/1.9.1/gems/refinerycms-core-2.0.5/app/views/refinery/_footer.html.erb (0.9ms)
+2012-06-28T21:07:01+00:00 app[web.1]:   Rendered vendor/bundle/ruby/1.9.1/gems/refinerycms-core-2.0.5/app/views/refinery/_javascripts.html.erb (1.6ms)
+2012-06-28T21:07:01+00:00 app[web.1]:   Rendered vendor/bundle/ruby/1.9.1/gems/refinerycms-core-2.0.5/app/views/refinery/_html_tag.html.erb (0.5ms)
+2012-06-28T21:07:01+00:00 app[web.1]:   Rendered refinery/blog/posts/show.html.erb within layouts/application (561.5ms)
+2012-06-28T21:07:01+00:00 app[web.1]: Completed 200 OK in 4165ms (Views: 926.6ms | ActiveRecord: 264.4ms)
+2012-06-28T21:07:01+00:00 heroku[nginx]: 199.21.99.74 - - [28/Jun/2012:21:07:01 +0000] "GET /blog/posts/derp HTTP/1.1" 200 2303 "-" "Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)" cmutsa.org
+2012-06-28T21:34:06+00:00 heroku[router]: GET cmutsa.org/ dyno=web.1 queue=0 wait=0ms service=476ms status=200 bytes=8935
+2012-06-28T21:34:06+00:00 heroku[nginx]: 67.172.16.217 - - [28/Jun/2012:21:34:06 +0000] "GET / HTTP/1.1" 200 3070 "-" "Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5" cmutsa.org
+2012-06-28T21:34:06+00:00 heroku[nginx]: 67.172.16.217 - - [28/Jun/2012:21:34:06 +0000] "GET /assets/formatting-ec53a0525fb04a18d77bb957bd928285.css HTTP/1.1" 200 472 "http://cmutsa.org/" "Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5" cmutsa.org
+2012-06-28T21:34:06+00:00 heroku[router]: GET cmutsa.org/assets/application-5517b709ba03a549781c426de69ef7c0.css dyno=web.1 queue=0 wait=0ms service=15ms status=200 bytes=20650
+2012-06-28T21:34:06+00:00 heroku[router]: GET cmutsa.org/assets/formatting-ec53a0525fb04a18d77bb957bd928285.css dyno=web.1 queue=0 wait=0ms service=8ms status=200 bytes=472
+2012-06-28T21:34:06+00:00 heroku[nginx]: 67.172.16.217 - - [28/Jun/2012:21:34:06 +0000] "GET /assets/application-5517b709ba03a549781c426de69ef7c0.css HTTP/1.1" 200 4849 "http://cmutsa.org/" "Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5" cmutsa.org
+2012-06-28T21:34:07+00:00 heroku[nginx]: 67.172.16.217 - - [28/Jun/2012:21:34:07 +0000] "GET /assets/home-7270767b2a9e9fff880aa5de378ca791.css HTTP/1.1" 200 0 "http://cmutsa.org/" "Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5" cmutsa.org
+2012-06-28T21:34:07+00:00 heroku[router]: GET cmutsa.org/assets/home-7270767b2a9e9fff880aa5de378ca791.css dyno=web.1 queue=0 wait=0ms service=6ms status=200 bytes=0
+2012-06-28T21:34:07+00:00 heroku[router]: GET cmutsa.org/assets/refinery/blog/frontend-aaeb420e435264d2d4a52828dd967b49.css dyno=web.1 queue=0 wait=0ms service=7ms status=200 bytes=1538
+2012-06-28T21:34:07+00:00 heroku[nginx]: 67.172.16.217 - - [28/Jun/2012:21:34:07 +0000] "GET /assets/refinery/blog/frontend-aaeb420e435264d2d4a52828dd967b49.css HTTP/1.1" 200 664 "http://cmutsa.org/" "Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5" cmutsa.org
+2012-06-28T21:34:07+00:00 heroku[router]: GET cmutsa.org/assets/modernizr-min-9dc2829f208085f8688fe1eab97d5fc3.js dyno=web.1 queue=0 wait=0ms service=11ms status=200 bytes=16230
+2012-06-28T21:34:07+00:00 heroku[nginx]: 67.172.16.217 - - [28/Jun/2012:21:34:07 +0000] "GET /assets/modernizr-min-9dc2829f208085f8688fe1eab97d5fc3.js HTTP/1.1" 200 6577 "http://cmutsa.org/" "Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5" cmutsa.org
+2012-06-28T21:34:07+00:00 heroku[nginx]: 67.172.16.217 - - [28/Jun/2012:21:34:07 +0000] "GET /assets/theme-8830d623340bbbb8ecccbf3aa7b1f6a0.css HTTP/1.1" 200 374 "http://cmutsa.org/" "Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5" cmutsa.org
+2012-06-28T21:34:07+00:00 heroku[router]: GET cmutsa.org/assets/theme-8830d623340bbbb8ecccbf3aa7b1f6a0.css dyno=web.1 queue=0 wait=0ms service=4ms status=200 bytes=374
+2012-06-28T21:34:07+00:00 heroku[router]: GET cmutsa.org/assets/application-e09b8229a77acb9b763a9e034ad27ac9.js dyno=web.1 queue=0 wait=0ms service=19ms status=200 bytes=162496
+2012-06-28T21:34:07+00:00 heroku[nginx]: 67.172.16.217 - - [28/Jun/2012:21:34:07 +0000] "GET /assets/application-e09b8229a77acb9b763a9e034ad27ac9.js HTTP/1.1" 200 50856 "http://cmutsa.org/" "Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5" cmutsa.org
+2012-06-28T21:34:07+00:00 heroku[router]: GET cmutsa.org/assets/tsa_logo-12655e7ce4d5d2cb51f32f6b4481d3e2.png dyno=web.1 queue=0 wait=0ms service=5ms status=200 bytes=5465
+2012-06-28T21:34:07+00:00 heroku[nginx]: 67.172.16.217 - - [28/Jun/2012:21:34:07 +0000] "GET /assets/tsa_logo-12655e7ce4d5d2cb51f32f6b4481d3e2.png HTTP/1.1" 200 5465 "http://cmutsa.org/" "Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5" cmutsa.org
+2012-06-28T21:34:07+00:00 heroku[nginx]: 67.172.16.217 - - [28/Jun/2012:21:34:07 +0000] "GET /system/images/BAhbB1sHOgZmSSIrMjAxMi8wNi8xOS8yMC8yMS81MC8zMDEvYmxhY2tib2FyZC5qcGcGOgZFVFsIOgZwOgp0aHVtYkkiDjE5MjB4NDAwIwY7BlQ/blackboard.jpg HTTP/1.1" 200 181751 "http://cmutsa.org/" "Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5" cmutsa.org
+2012-06-28T21:34:07+00:00 heroku[router]: GET cmutsa.org/assets/tgcbold.ttf dyno=web.1 queue=0 wait=0ms service=67ms status=200 bytes=75280
+2012-06-28T21:34:07+00:00 heroku[nginx]: 67.172.16.217 - - [28/Jun/2012:21:34:07 +0000] "GET /assets/tgcbold.ttf HTTP/1.1" 200 75280 "http://cmutsa.org/" "Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5" cmutsa.org
+2012-06-28T21:34:09+00:00 app[web.1]: 
+2012-06-28T21:34:09+00:00 app[web.1]: 
+2012-06-28T21:34:09+00:00 app[web.1]: Please use content_for :body instead.
+2012-06-28T21:34:09+00:00 app[web.1]: Started GET "/" for 67.172.16.217 at 2012-06-28 21:34:06 +0000
+2012-06-28T21:34:09+00:00 app[web.1]: Processing by Refinery::Blog::PostsController#index as HTML
+2012-06-28T21:34:09+00:00 app[web.1]: -- DEPRECATION WARNING --
+2012-06-28T21:34:09+00:00 app[web.1]: The use of 'content_for :body_content_left' is deprecated and will be removed at version 2.1.0.
+2012-06-28T21:34:09+00:00 app[web.1]: 
+2012-06-28T21:34:09+00:00 app[web.1]:   Rendered vendor/bundle/ruby/1.9.1/gems/refinerycms-core-2.0.5/app/views/refinery/_html_tag.html.erb (0.1ms)
+2012-06-28T21:34:09+00:00 app[web.1]:   Rendered vendor/bundle/ruby/1.9.1/gems/refinerycms-core-2.0.5/app/views/refinery/_head.html.erb (72.8ms)
+2012-06-28T21:34:09+00:00 app[web.1]:   Rendered vendor/bundle/ruby/1.9.1/gems/refinerycms-core-2.0.5/app/views/refinery/_menu_branch.html.erb (1.5ms)
+2012-06-28T21:34:09+00:00 app[web.1]:   Rendered vendor/bundle/ruby/1.9.1/gems/refinerycms-core-2.0.5/app/views/refinery/_google_analytics.html.erb (0.2ms)
+2012-06-28T21:34:09+00:00 app[web.1]:   Rendered refinery/_content_page.html.erb (6.2ms)
+2012-06-28T21:34:09+00:00 app[web.1]:   Rendered refinery/blog/posts/index.html.erb within layouts/application (350.4ms)
+2012-06-28T21:34:09+00:00 app[web.1]:   Rendered vendor/bundle/ruby/1.9.1/gems/refinerycms-core-2.0.5/app/views/refinery/_site_bar.html.erb (0.3ms)
+2012-06-28T21:34:09+00:00 app[web.1]:   Rendered refinery/blog/shared/_post.html.erb (12.7ms)
+2012-06-28T21:34:09+00:00 app[web.1]:   Rendered vendor/bundle/ruby/1.9.1/gems/refinerycms-core-2.0.5/app/views/refinery/_footer.html.erb (0.3ms)
+2012-06-28T21:34:09+00:00 app[web.1]:   Rendered vendor/bundle/ruby/1.9.1/gems/refinerycms-core-2.0.5/app/views/refinery/_menu.html.erb (10.3ms)
+2012-06-28T21:34:09+00:00 app[web.1]: Completed 200 OK in 467ms (Views: 385.2ms | ActiveRecord: 75.3ms)
+2012-06-28T21:34:09+00:00 app[web.1]:   Rendered vendor/bundle/ruby/1.9.1/gems/refinerycms-core-2.0.5/app/views/refinery/_javascripts.html.erb (0.4ms)
+2012-06-28T21:34:09+00:00 app[web.1]: 
+2012-06-28T21:34:09+00:00 app[web.1]: 
+2012-06-28T21:34:09+00:00 app[web.1]: Started GET "/system/images/BAhbB1sHOgZmSSJFMjAxMi8wNS8yOC8xOS8xMS80OS82NDgvU2NyZWVuX3Nob3RfMjAxMl8wNV8yOF9hdF8zLjExLjMyX1BNLnBuZwY6BkVUWwg6BnA6CnRodW1iSSIOMTkyMHg0MDAjBjsGVA/Screen%20shot%202012-05-28%20at%203.11.32%20PM.png" for 67.172.16.217 at 2012-06-28 21:34:07 +0000
+2012-06-28T21:34:12+00:00 app[web.1]: [WARNING] fog: the specified s3 bucket name(CMU-TSA) is not a valid dns name, which will negatively impact performance.  For details see: http://docs.amazonwebservices.com/AmazonS3/latest/dev/BucketRestrictions.html
+2012-06-28T21:34:18+00:00 app[web.1]: 
+2012-06-28T21:34:18+00:00 app[web.1]: 
+2012-06-28T21:34:18+00:00 app[web.1]: Started GET "/system/images/BAhbB1sHOgZmSSIpMjAxMi8wNi8xMS8wNy80Mi81Mi8xMjQvSU1HXzE0MTAuSlBHBjoGRVRbCDoGcDoKdGh1bWJJIg4xOTIweDQwMCMGOwZU/IMG_1410.JPG" for 67.172.16.217 at 2012-06-28 21:34:18 +0000
+2012-06-28T21:34:18+00:00 app[web.1]: [WARNING] fog: the specified s3 bucket name(CMU-TSA) is not a valid dns name, which will negatively impact performance.  For details see: http://docs.amazonwebservices.com/AmazonS3/latest/dev/BucketRestrictions.html
+2012-06-28T21:34:18+00:00 heroku[router]: GET cmutsa.org/system/images/BAhbB1sHOgZmSSJFMjAxMi8wNS8yOC8xOS8xMS80OS82NDgvU2NyZWVuX3Nob3RfMjAxMl8wNV8yOF9hdF8zLjExLjMyX1BNLnBuZwY6BkVUWwg6BnA6CnRodW1iSSIOMTkyMHg0MDAjBjsGVA/Screen%20shot%202012-05-28%20at%203.11.32%20PM.png dyno=web.1 queue=0 wait=0ms service=11233ms status=200 bytes=870527
+2012-06-28T21:34:18+00:00 heroku[nginx]: 67.172.16.217 - - [28/Jun/2012:21:34:18 +0000] "GET /system/images/BAhbB1sHOgZmSSJFMjAxMi8wNS8yOC8xOS8xMS80OS82NDgvU2NyZWVuX3Nob3RfMjAxMl8wNV8yOF9hdF8zLjExLjMyX1BNLnBuZwY6BkVUWwg6BnA6CnRodW1iSSIOMTkyMHg0MDAjBjsGVA/Screen%20shot%202012-05-28%20at%203.11.32%20PM.png HTTP/1.1" 200 870527 "http://cmutsa.org/" "Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5" cmutsa.org
+2012-06-28T21:34:22+00:00 heroku[nginx]: 67.172.16.217 - - [28/Jun/2012:21:34:22 +0000] "GET /system/images/BAhbBlsHOgZmSSIpMjAxMi8wNi8xMS8wNy80MS8zNS85ODYvSU1HXzEzMDQuSlBHBjoGRVQ/IMG_1304.JPG HTTP/1.1" 499 0 "http://cmutsa.org/" "Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5" cmutsa.org
+2012-06-28T21:34:22+00:00 heroku[nginx]: 67.172.16.217 - - [28/Jun/2012:21:34:22 +0000] "GET /system/images/BAhbB1sHOgZmSSIpMjAxMi8wNi8xMS8wNy80Mi81Mi8xMjQvSU1HXzE0MTAuSlBHBjoGRVRbCDoGcDoKdGh1bWJJIg4xOTIweDQwMCMGOwZU/IMG_1410.JPG HTTP/1.1" 499 0 "http://cmutsa.org/" "Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5" cmutsa.org
+2012-06-28T21:34:22+00:00 heroku[nginx]: 67.172.16.217 - - [28/Jun/2012:21:34:22 +0000] "GET /system/images/BAhbBlsHOgZmSSJFMjAxMi8wNS8yOC8xOS8wMi8xNy85NzQvU2NyZWVuX3Nob3RfMjAxMl8wNV8yOF9hdF8zLjAxLjQ4X1BNLnBuZwY6BkVU/Screen%20shot%202012-05-28%20at%203.01.48%20PM.png HTTP/1.1" 499 0 "http://cmutsa.org/" "Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5" cmutsa.org
+2012-06-28T21:34:23+00:00 app[web.1]: 
+2012-06-28T21:34:23+00:00 app[web.1]: 
+2012-06-28T21:34:23+00:00 app[web.1]: Started GET "/system/images/BAhbBlsHOgZmSSJFMjAxMi8wNS8yOC8xOS8wMi8xNy85NzQvU2NyZWVuX3Nob3RfMjAxMl8wNV8yOF9hdF8zLjAxLjQ4X1BNLnBuZwY6BkVU/Screen%20shot%202012-05-28%20at%203.01.48%20PM.png" for 67.172.16.217 at 2012-06-28 21:34:23 +0000
+2012-06-28T21:34:23+00:00 app[web.1]: [WARNING] fog: the specified s3 bucket name(CMU-TSA) is not a valid dns name, which will negatively impact performance.  For details see: http://docs.amazonwebservices.com/AmazonS3/latest/dev/BucketRestrictions.html
+2012-06-28T21:34:23+00:00 heroku[router]: GET cmutsa.org/system/images/BAhbB1sHOgZmSSIpMjAxMi8wNi8xMS8wNy80Mi81Mi8xMjQvSU1HXzE0MTAuSlBHBjoGRVRbCDoGcDoKdGh1bWJJIg4xOTIweDQwMCMGOwZU/IMG_1410.JPG dyno=web.1 queue=0 wait=0ms service=16340ms status=200 bytes=216121
+2012-06-28T21:34:24+00:00 app[web.1]: 
+2012-06-28T21:34:24+00:00 app[web.1]: 
+2012-06-28T21:34:24+00:00 app[web.1]: [WARNING] fog: the specified s3 bucket name(CMU-TSA) is not a valid dns name, which will negatively impact performance.  For details see: http://docs.amazonwebservices.com/AmazonS3/latest/dev/BucketRestrictions.html
+2012-06-28T21:34:24+00:00 app[web.1]: Started GET "/system/images/BAhbBlsHOgZmSSIpMjAxMi8wNi8xMS8wNy80MS8zNS85ODYvSU1HXzEzMDQuSlBHBjoGRVQ/IMG_1304.JPG" for 67.172.16.217 at 2012-06-28 21:34:24 +0000
+2012-06-28T21:34:24+00:00 heroku[router]: GET cmutsa.org/system/images/BAhbBlsHOgZmSSJFMjAxMi8wNS8yOC8xOS8wMi8xNy85NzQvU2NyZWVuX3Nob3RfMjAxMl8wNV8yOF9hdF8zLjAxLjQ4X1BNLnBuZwY6BkVU/Screen%20shot%202012-05-28%20at%203.01.48%20PM.png dyno=web.1 queue=0 wait=0ms service=17115ms status=200 bytes=403567
+2012-06-28T21:34:25+00:00 heroku[router]: GET cmutsa.org/system/images/BAhbBlsHOgZmSSIpMjAxMi8wNi8xMS8wNy80MS8zNS85ODYvSU1HXzEzMDQuSlBHBjoGRVQ/IMG_1304.JPG dyno=web.1 queue=0 wait=0ms service=18592ms status=200 bytes=1174714
+2012-06-28T21:50:16+00:00 heroku[slugc]: Slug compilation started
+2012-06-28T21:51:38+00:00 heroku[api]: Release v93 created by huan@oneblueham.com
+2012-06-28T21:51:38+00:00 heroku[api]: Deploy 4c606bf by huan@oneblueham.com
+2012-06-28T21:51:39+00:00 heroku[web.1]: State changed from up to starting
+2012-06-28T21:51:39+00:00 heroku[slugc]: Slug compilation finished
+2012-06-28T21:51:41+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2012-06-28T21:51:41+00:00 app[web.1]: [2012-06-28 21:51:41] ERROR SignalException: SIGTERM
+2012-06-28T21:51:41+00:00 app[web.1]: 	/usr/local/lib/ruby/1.9.1/webrick/server.rb:90:in `select'
+2012-06-28T21:51:44+00:00 heroku[web.1]: Starting process with command `bundle exec rails server -p 24283`
+2012-06-28T21:51:51+00:00 heroku[web.1]: Error R12 (Exit timeout) -> At least one process failed to exit within 10 seconds of SIGTERM
+2012-06-28T21:51:51+00:00 heroku[web.1]: Stopping remaining processes with SIGKILL
+2012-06-28T21:51:52+00:00 heroku[web.1]: Process exited with status 137
+2012-06-28T21:52:03+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/1/4/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
+2012-06-28T21:52:03+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/1/4/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
+2012-06-28T21:52:03+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/1/4/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
+2012-06-28T21:52:20+00:00 app[web.1]: [2012-06-28 21:52:20] INFO  WEBrick 1.3.1
+2012-06-28T21:52:20+00:00 app[web.1]: [2012-06-28 21:52:20] INFO  ruby 1.9.2 (2011-07-09) [x86_64-linux]
+2012-06-28T21:52:20+00:00 app[web.1]: [2012-06-28 21:52:20] INFO  WEBrick::HTTPServer#start: pid=1 port=24283
+2012-06-28T21:52:20+00:00 heroku[web.1]: State changed from starting to up
+2012-06-28T21:52:23+00:00 app[web.1]: => Booting WEBrick
+2012-06-28T21:52:23+00:00 app[web.1]: => Rails 3.2.3 application starting in production on http://0.0.0.0:24283
+2012-06-28T21:52:23+00:00 app[web.1]: => Call with -d to detach
+2012-06-28T21:52:23+00:00 app[web.1]: => Ctrl-C to shutdown server
+2012-06-28T21:52:23+00:00 app[web.1]: 
+2012-06-28T21:52:23+00:00 app[web.1]: 
+2012-06-28T21:52:23+00:00 app[web.1]: Started GET "/" for 67.172.16.217 at 2012-06-28 21:52:23 +0000
+2012-06-28T21:52:25+00:00 app[web.1]: 
+2012-06-28T21:52:25+00:00 app[web.1]: -- DEPRECATION WARNING --
+2012-06-28T21:52:25+00:00 app[web.1]: The use of 'content_for :body_content_left' is deprecated and will be removed at version 2.1.0.
+2012-06-28T21:52:25+00:00 app[web.1]: Please use content_for :body instead.
+2012-06-28T21:52:25+00:00 app[web.1]: WARN: tilt autoloading 'sass' in a non thread-safe way; explicit require 'sass' suggested.
+2012-06-28T21:52:29+00:00 app[web.1]: 
+2012-06-28T21:52:29+00:00 app[web.1]: ActionView::Template::Error (couldn't find file 'twitter/bootstrap'
+2012-06-28T21:52:29+00:00 app[web.1]:   (in /app/app/assets/javascripts/application.js:15)):
+2012-06-28T21:52:29+00:00 app[web.1]:     6:     <%= javascript_include_tag 'dd_belatedpng' %>
+2012-06-28T21:52:29+00:00 app[web.1]:     7:     <script> DD_belatedPNG.fix('img, .png_bg'); //fix any <img> or .png_bg background-images </script>
+2012-06-28T21:52:29+00:00 app[web.1]:     8:   <![endif]-->
+2012-06-28T21:52:29+00:00 app[web.1]:     9: <% end %>
+2012-06-28T21:52:29+00:00 app[web.1]:     10: <%= javascript_include_tag 'application' %>
+2012-06-28T21:52:29+00:00 app[web.1]:     11: <%= yield :javascripts -%>
+2012-06-28T21:52:29+00:00 app[web.1]:   app/views/layouts/application.html.erb:114:in `_app_views_layouts_application_html_erb___935792878108859241_55493040'
+2012-06-28T21:52:29+00:00 app[web.1]: 
+2012-06-28T21:52:29+00:00 app[web.1]: 
+2012-06-28T21:52:29+00:00 app[web.1]:   Rendered refinery/blog/shared/_post.html.erb (103.2ms)
+2012-06-28T21:52:29+00:00 app[web.1]: Processing by Refinery::Blog::PostsController#index as HTML
+2012-06-28T21:52:29+00:00 app[web.1]:   Rendered refinery/_content_page.html.erb (57.0ms)
+2012-06-28T21:52:29+00:00 app[web.1]: Compiled refinery/blog/frontend.css  (1472ms)  (pid 1)
+2012-06-28T21:52:29+00:00 app[web.1]:   Rendered refinery/blog/posts/index.html.erb within layouts/application (2757.7ms)
+2012-06-28T21:52:29+00:00 app[web.1]:   Rendered vendor/bundle/ruby/1.9.1/gems/refinerycms-core-2.0.5/app/views/refinery/_site_bar.html.erb (1.1ms)
+2012-06-28T21:52:29+00:00 app[web.1]:   Rendered vendor/bundle/ruby/1.9.1/gems/refinerycms-core-2.0.5/app/views/refinery/_html_tag.html.erb (0.6ms)
+2012-06-28T21:52:29+00:00 app[web.1]: Compiled formatting.css  (10ms)  (pid 1)
+2012-06-28T21:52:29+00:00 app[web.1]: Compiled theme.css  (4ms)  (pid 1)
+2012-06-28T21:52:29+00:00 app[web.1]:   Rendered vendor/bundle/ruby/1.9.1/gems/refinerycms-core-2.0.5/app/views/refinery/_google_analytics.html.erb (0.9ms)
+2012-06-28T21:52:29+00:00 app[web.1]: Compiled home.css  (1ms)  (pid 1)
+2012-06-28T21:52:29+00:00 app[web.1]: Compiled modernizr-min.js  (0ms)  (pid 1)
+2012-06-28T21:52:29+00:00 app[web.1]:   Rendered vendor/bundle/ruby/1.9.1/gems/refinerycms-core-2.0.5/app/views/refinery/_menu.html.erb (331.8ms)
+2012-06-28T21:52:29+00:00 app[web.1]:   Rendered vendor/bundle/ruby/1.9.1/gems/refinerycms-core-2.0.5/app/views/refinery/_head.html.erb (1301.2ms)
+2012-06-28T21:52:29+00:00 app[web.1]:   Rendered vendor/bundle/ruby/1.9.1/gems/refinerycms-core-2.0.5/app/views/refinery/_menu_branch.html.erb (16.8ms)
+2012-06-28T21:52:29+00:00 app[web.1]:   Rendered vendor/bundle/ruby/1.9.1/gems/refinerycms-core-2.0.5/app/views/refinery/_footer.html.erb (0.8ms)
+2012-06-28T21:52:29+00:00 app[web.1]:   Rendered vendor/bundle/ruby/1.9.1/gems/refinerycms-core-2.0.5/app/views/refinery/_javascripts.html.erb (39.3ms)
+2012-06-28T21:52:29+00:00 app[web.1]: Completed 500 Internal Server Error in 5340ms
+2012-06-28T21:52:29+00:00 heroku[nginx]: 67.172.16.217 - - [28/Jun/2012:21:52:29 +0000] "GET / HTTP/1.1" 500 643 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.11 (KHTML, like Gecko) Chrome/20.0.1132.43 Safari/536.11" cmutsa.org
+2012-06-28T21:52:29+00:00 heroku[router]: GET cmutsa.org/ dyno=web.1 queue=0 wait=0ms service=5705ms status=500 bytes=643
