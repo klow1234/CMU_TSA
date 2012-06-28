@@ -73,14 +73,6 @@ $(document).ready(
       arrows    : true
     }));
     
-    $("#fullwidth_slider").PikaChoose({transition:[0]}); // 0: full frame cross fade
-		// $("#pikame").PikaChoose({transition:[1]}); // 1: paneled fold out
-		// $("#pikame").PikaChoose({transition:[2]}); // 2: horizontal blinds
-		// $("#pikame").PikaChoose({transition:[3]}); // 3: vertical blinds
-		// $("#pikame").PikaChoose({transition:[4]}); // 4: small box random fades
-		// $("#pikame").PikaChoose({transition:[5]}); // 5: full image blind slide
-		// $("#pikame").PikaChoose({transition:[6]}); // 6: fade out, then fade in (use this for different sized images)
-	
 	$('.caption').css({'right': (1920/2)+($('.row').width()/(-1*2))+(40)+'px'});
 
 	$("nav li").click(function () {
