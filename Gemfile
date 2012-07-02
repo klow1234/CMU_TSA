@@ -57,5 +57,4 @@ gem 'refinerycms-inquiries', '~> 2.0.0'
 
 gem 'refinerycms-events', :path => 'vendor/extensions'
 gem 'refinerycms-officers', :path => 'vendor/extensions'
-gem 'refinerycms-sliding_images', :path => 'vendor/extensions'
 gem 'refinerycms-members', :path => 'vendor/extensions'
