@@ -11,8 +11,8 @@ class ApplicationController < ActionController::Base
   helper_method :upcoming_events
 
   def image_slider
-    @image_slider = Refinery::SlidingImages::SlidingImage.order('position ASC')
-    @image_slider
+    @images = Refinery::BannerImages::BannerImage.order('position ASC')
+    @images
   end
   helper_method :image_slider
 end

@@ -11,7 +11,23 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120702080100) do
+ActiveRecord::Schema.define(:version => 20120704073441) do
+
+  create_table "refinery_banner_images", :force => true do |t|
+    t.string   "name"
+    t.string   "title"
+    t.text     "content"
+    t.string   "background_color"
+    t.string   "link"
+    t.string   "data_x"
+    t.string   "data_y"
+    t.string   "data_z"
+    t.string   "data_rotate"
+    t.integer  "photo_id"
+    t.integer  "position"
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
+  end
 
   create_table "refinery_blog_categories", :force => true do |t|
     t.string   "title"

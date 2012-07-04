@@ -183,12 +183,12 @@
 				// delete all current bg colors
 				this.removeClass( _self.colors );
 				// add bg color class
-				this.addClass( slide.data( 'color' ) );
-				
+				//this.addClass( slide.data( 'color' ) );
+				this.css("background-color", slide.data('color'));
 			} );
 			
 			// add step's bg color to the wrapper
-			this.$jmsWrapper.addClass( this.$jmsWrapper.jmpress('active').data( 'color' ) );
+			this.$jmsWrapper.css("background-color", this.$jmsWrapper.jmpress('active').data( 'color' ) );
 			
 		},
 		// start slideshow if autoplay is true
