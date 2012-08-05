@@ -2,8 +2,7 @@ module Refinery
   module Inquiries
     class Inquiry < Refinery::Core::BaseModel
 
-      filters_spam :message_field => :message,
-                   :email_field => :email,
+      filters_spam :email_field => :email,
                    :author_field => :name,
                    :other_fields => [:phone],
                    :extra_spam_words => %w()
